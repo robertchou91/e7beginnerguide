@@ -1,13 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
-  );
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Reroll from './components/Reroll';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
+class App extends React.PureComponent {
+  render() {
+    return (
+      <Router>
+        <div className='App'>
+          <Navbar />
+          <Route path='/' exact component={Home} />
+          <Route path='/reroll' component={Reroll} />
+        </div>
+      </Router>
+      
+    );
+  }
 }
+
 
 export default App;
