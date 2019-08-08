@@ -1,14 +1,14 @@
 import React from 'react';
 import '../App.css';
 
-class Home extends React.PureComponent {
+class Equipment extends React.PureComponent {
   render() {
     return (
       <div>
-        <h1>Home Page</h1>
+        <h1>Equipment Page</h1>
       </div>
     );
   }
 }
 
-export default Home;
+export default Equipment;
