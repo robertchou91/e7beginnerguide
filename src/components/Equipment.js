@@ -5,7 +5,7 @@ class Equipment extends React.PureComponent {
   render() {
     return (
       <div>
-        <h1>Equipment Page</h1>
+        <h1>Equipment</h1>
       </div>
     );
   }

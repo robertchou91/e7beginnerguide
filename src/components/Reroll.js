@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../App.css';
 
-class Reroll extends React.PureComponent {
+
+class Reroll extends Component {
 	render() {
 		return (
 			<div>
@@ -19,7 +20,11 @@ class Reroll extends React.PureComponent {
 				</div>
 				<div>
 					<h2>Five Star Heroes</h2>
-
+					
+				</div>
+				<div>
+					<h2>Four Star Heroes</h2>
+					Angelica, Corvus, Cidd, Clarissa
 				</div>
 			</div>
 		);
