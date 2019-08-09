@@ -4,20 +4,29 @@ import '../App.css';
 
 const data = [
 	{
-		hero5: 'Ravi',
+		hero5good: 'Iseria',
 		hero_details: [
 			{
-				reason1: 'ravi1',
-				reason2: 'ravi2'
+				reason1: 'iseria1',
+				reason2: 'iseria2'
 			}
 		]
 	},
 	{
-		hero5: 'Vildred',
+		hero5good: 'Vildred',
 		hero_details: [
 			{
 				reason1: 'vildred1',
 				reason2: 'vildred2'
+			}
+		]
+	},
+	{
+		hero5ok: 'Ravi',
+		hero_details: [
+			{
+				reason1: 'ravi1',
+				reason2: 'ravi2'
 			}
 		]
 	},
@@ -46,7 +55,8 @@ class Reroll extends Component {
 	constructor(props, context) {
     super(props, context);
     this.state = {
-      heroes5: [],
+			heroes5good: [],
+			heroes5ok: [],
 			selectedHero5:null,
 			heroes4: [],
       selectedHero4:null
@@ -54,7 +64,8 @@ class Reroll extends Component {
   }
 
   componentDidMount() {
-		this.setState({ heroes5: data });
+		this.setState({ heroes5good: data });
+		this.setState({ heroes5ok: data });
 		this.setState({ heroes4: data });
   }
   onSelectDevice = (hero) => {
@@ -67,7 +78,7 @@ class Reroll extends Component {
 	
 
 	render() {
-		const { heroes5,selectedHero5, heroes4,selectedHero4 } = this.state;
+		const { heroes5good, heroes5ok ,selectedHero5, heroes4,selectedHero4 } = this.state;
 
 		return (
 			<div>
@@ -85,8 +96,11 @@ class Reroll extends Component {
 				</div>
 				<div>
 					<h2>Five Star Heroes</h2>
-					{heroes5.map((hero, idx) => (
-            <h4 onClick={(e)=>this.onSelectDevice(hero)} key={idx}>{hero.hero5}</h4>
+					{heroes5good.filter(hero => hero.hero5good).map((hero, idx) => (
+            <h3 onClick={(e)=>this.onSelectDevice(hero)} key={idx}>{hero.hero5good}</h3>
+					))}
+					{heroes5ok.filter(hero => hero.hero5ok).map((hero, idx) => (
+            <h3 onClick={(e)=>this.onSelectDevice(hero)} key={idx}>{hero.hero5ok}</h3>
 					))}
           {selectedHero5?(selectedHero5.hero_details.map((hero, idx) => (
 						<div key={idx}>
@@ -97,7 +111,7 @@ class Reroll extends Component {
 				</div>
 				<div>
 					<h2>Four Star Heroes</h2>
-					{heroes4.map((hero, idx) => (
+					{heroes4.filter(hero => hero.hero4).map((hero, idx) => (
             <h4 onClick={(e)=>this.onSelectDevice2(hero)} key={idx}>{hero.hero4}</h4>
 					))}
           {selectedHero4?(selectedHero4.hero_details.map((hero, idx) => (
