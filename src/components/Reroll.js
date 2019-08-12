@@ -54,18 +54,14 @@ class Reroll extends Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = {
-			heroes5good: [],
-			heroes5ok: [],
-			selectedHero5: null,
-			heroes4: [],
-			selectedHero4: null
+			heroes: [],
+			selectedHero4: null,
+			selectedHero5: null
 		};
 	}
 
 	componentDidMount() {
-		this.setState({ heroes5good: data });
-		this.setState({ heroes5ok: data });
-		this.setState({ heroes4: data });
+		this.setState({ heroes: data });
 	}
 	onSelectDevice = (hero) => {
 		this.setState({ selectedHero5: hero })
@@ -77,7 +73,7 @@ class Reroll extends Component {
 
 
 	render() {
-		const { heroes5good, heroes5ok, selectedHero5, heroes4, selectedHero4 } = this.state;
+		const { heroes, selectedHero5, selectedHero4 } = this.state;
 
 		return (
 			<div>
@@ -95,10 +91,10 @@ class Reroll extends Component {
 				</div>
 				<div>
 					<h2>Five Star Heroes</h2>
-					{heroes5good.filter(hero => hero.hero5good).map((hero, idx) => (
+					{heroes.filter(hero => hero.hero5good).map((hero, idx) => (
 						<h3 onClick={(e) => this.onSelectDevice(hero)} key={idx}>{hero.hero5good}</h3>
 					))}
-					{heroes5ok.filter(hero => hero.hero5ok).map((hero, idx) => (
+					{heroes.filter(hero => hero.hero5ok).map((hero, idx) => (
 						<h3 onClick={(e) => this.onSelectDevice(hero)} key={idx}>{hero.hero5ok}</h3>
 					))}
 					{selectedHero5 ? (selectedHero5.hero_details.map((hero, idx) => (
@@ -110,7 +106,7 @@ class Reroll extends Component {
 				</div>
 				<div>
 					<h2>Four Star Heroes</h2>
-					{heroes4.filter(hero => hero.hero4).map((hero, idx) => (
+					{heroes.filter(hero => hero.hero4).map((hero, idx) => (
 						<h4 onClick={(e) => this.onSelectDevice2(hero)} key={idx}>{hero.hero4}</h4>
 					))}
 					{selectedHero4 ? (selectedHero4.hero_details.map((hero, idx) => (
