@@ -9,19 +9,19 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 class App extends React.PureComponent {
-  render() {
-    return (
-      <Router>
-        <div className='App'>
-          <Navbar />
-          <Route path='/' exact component={Home} />
-          <Route path='/reroll' component={Reroll} />
-          <Route path='/equipment' component={Equipment} />
-        </div>
-      </Router>
+    render() {
+        return (
+            <Router>
+                <div className='App'>
+                    <Navbar />
+                    <Route path='/' exact component={Home} />
+                    <Route path='/reroll' component={Reroll} />
+                    <Route path='/equipment' component={Equipment} />
+                </div>
+            </Router>
 
-    );
-  }
+        );
+    }
 }
 
 

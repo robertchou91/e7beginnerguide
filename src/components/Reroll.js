@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 
-
 const data = [
 	{
 		hero5good: 'Iseria',
@@ -53,32 +52,32 @@ const data = [
 class Reroll extends Component {
 
 	constructor(props, context) {
-    super(props, context);
-    this.state = {
+		super(props, context);
+		this.state = {
 			heroes5good: [],
 			heroes5ok: [],
-			selectedHero5:null,
+			selectedHero5: null,
 			heroes4: [],
-      selectedHero4:null
-    };
-  }
+			selectedHero4: null
+		};
+	}
 
-  componentDidMount() {
+	componentDidMount() {
 		this.setState({ heroes5good: data });
 		this.setState({ heroes5ok: data });
 		this.setState({ heroes4: data });
-  }
-  onSelectDevice = (hero) => {
-    this.setState({  selectedHero5:hero })
+	}
+	onSelectDevice = (hero) => {
+		this.setState({ selectedHero5: hero })
 	}
 
 	onSelectDevice2 = (hero) => {
-    this.setState({  selectedHero4:hero })
+		this.setState({ selectedHero4: hero })
 	}
-	
+
 
 	render() {
-		const { heroes5good, heroes5ok ,selectedHero5, heroes4,selectedHero4 } = this.state;
+		const { heroes5good, heroes5ok, selectedHero5, heroes4, selectedHero4 } = this.state;
 
 		return (
 			<div>
@@ -97,29 +96,29 @@ class Reroll extends Component {
 				<div>
 					<h2>Five Star Heroes</h2>
 					{heroes5good.filter(hero => hero.hero5good).map((hero, idx) => (
-            <h3 onClick={(e)=>this.onSelectDevice(hero)} key={idx}>{hero.hero5good}</h3>
+						<h3 onClick={(e) => this.onSelectDevice(hero)} key={idx}>{hero.hero5good}</h3>
 					))}
 					{heroes5ok.filter(hero => hero.hero5ok).map((hero, idx) => (
-            <h3 onClick={(e)=>this.onSelectDevice(hero)} key={idx}>{hero.hero5ok}</h3>
+						<h3 onClick={(e) => this.onSelectDevice(hero)} key={idx}>{hero.hero5ok}</h3>
 					))}
-          {selectedHero5?(selectedHero5.hero_details.map((hero, idx) => (
+					{selectedHero5 ? (selectedHero5.hero_details.map((hero, idx) => (
 						<div key={idx}>
 							<h4>{hero.reason1}</h4>
-              <h4>{hero.reason2}</h4> 
+							<h4>{hero.reason2}</h4>
 						</div>
-          ))):<div>Helloworld</div>}
+					))) : <div>Helloworld</div>}
 				</div>
 				<div>
 					<h2>Four Star Heroes</h2>
 					{heroes4.filter(hero => hero.hero4).map((hero, idx) => (
-            <h4 onClick={(e)=>this.onSelectDevice2(hero)} key={idx}>{hero.hero4}</h4>
+						<h4 onClick={(e) => this.onSelectDevice2(hero)} key={idx}>{hero.hero4}</h4>
 					))}
-          {selectedHero4?(selectedHero4.hero_details.map((hero, idx) => (
+					{selectedHero4 ? (selectedHero4.hero_details.map((hero, idx) => (
 						<div key={idx}>
 							<h4>{hero.reason1}</h4>
-              <h4>{hero.reason2}</h4> 
+							<h4>{hero.reason2}</h4>
 						</div>
-          ))):null}
+					))) : null}
 				</div>
 			</div>
 		);
