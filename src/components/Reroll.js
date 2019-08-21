@@ -5,14 +5,11 @@ import { herodata, rerolldata } from './RerollData';
 
 class Reroll extends Component {
 
-	constructor(props) {
-		super(props);
-		this.state = {
-			heroes: [],
-			selectedHero4: null,
-			selectedHero5: null
-		};
-	}
+	state = {
+		heroes: [],
+		selectedHero4: null,
+		selectedHero5: null
+	};
 
 	componentDidMount() {
 		this.setState({ heroes: herodata });
