@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { data } from './Hero';
+import { herodata, rerolldata } from './rerolldata';
 
 
 class Reroll extends Component {
@@ -15,7 +15,7 @@ class Reroll extends Component {
 	}
 
 	componentDidMount() {
-		this.setState({ heroes: data });
+		this.setState({ heroes: herodata });
 	}
 	onSelectDevice = (hero) => {
 		this.setState({ selectedHero5: hero })
@@ -28,7 +28,7 @@ class Reroll extends Component {
 
 	render() {
 		const { heroes, selectedHero5, selectedHero4 } = this.state;
-
+		
 		return (
 			<div>
 				<div>
@@ -41,6 +41,7 @@ class Reroll extends Component {
 					<h2>Disclaimer</h2>
 				</div>
 				<div>
+					<p>{rerolldata.content}</p>
 					<p>These are what I would recommend to start with based on my own experience. This rerolling guide is not to pidgeon hole you into specific units. You are free to start with any Hero you want.</p>
 				</div>
 				<div>

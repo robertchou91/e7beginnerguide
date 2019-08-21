@@ -1,4 +1,9 @@
-export const data = [
+export const rerolldata = {
+	content: "Testing this thing here!"
+}
+
+
+export const herodata = [
 	{
 		hero5good: 'Iseria',
 		hero_details: [
@@ -45,3 +50,4 @@ export const data = [
 		]
 	}
 ]
+
