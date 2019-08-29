@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Reroll from './components/Reroll';
 import Equipment from './components/Equipment';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.scss';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './style.scss';
 
 
 
