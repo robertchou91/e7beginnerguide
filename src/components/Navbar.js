@@ -13,9 +13,9 @@ class Navbar extends React.PureComponent {
 							<Link to='/'><img src={raphi} alt="icon" /></Link>
 						</div>
 						<ul className="nav__list">
-							<Link to='/'><li className="nav__list-item">Home</li></Link>
-							<Link to='/reroll'><li className="nav__list-item">Reroll</li></Link>
-							<Link to='/equipment'><li className="nav__list-item">Equipment</li></Link>
+							<li className="nav__list-item"><Link to='/'>Home</Link></li>
+							<li className="nav__list-item"><Link to='/reroll'>Reroll</Link></li>
+							<li className="nav__list-item"><Link to='/equipment'>Equipment</Link></li>
 						</ul>
 					</div>
 				</nav>

@@ -12,7 +12,8 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.7;
-    // padding: 3rem;
+    background-color: #030303;
+    color: #D7DADC;
 }
 
 //Navbar
@@ -34,10 +35,18 @@ body {
 
 .nav__list {
     .nav__list-item {
-        list-style-type: none;
         display: inline-block;
         margin-right: 4rem;
         font-size: 1.8rem;
         text-align: center;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: #D7DADC;
+          text-decoration: none;
+        }
+        
     }
 }
+
