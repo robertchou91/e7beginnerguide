@@ -21,19 +21,15 @@ class App extends Component {
         });
     };
 
-    backDropClickHandler = () => {
-        this.setState({sideDrawerOpen: false});
-    };
-
     sideDrawerClosedHandler = () => {
         this.setState({sideDrawerOpen: false});
-      }
+    }
 
     render() {
         let backDrop;
         
         if(this.state.sideDrawerOpen) {
-            backDrop = <BackDrop click={this.backDropClickHandler} />;
+            backDrop = <BackDrop click={this.sideDrawerClosedHandler} />;
         }
 
         return (
