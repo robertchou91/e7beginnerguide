@@ -34,6 +34,29 @@
     max-width: 40rem;
     z-index: 200;
 
-    
+    &__list {
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        //work on this later
+        // justify-content: center;
+    }
+
+    &__list-item {
+        text-align: center;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+
+        &:hover,
+        &:active {
+            // change this later
+            color: green;
+        }
+    }
 }
 

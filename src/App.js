@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home';
@@ -10,14 +10,36 @@ import './scss/style.scss';
 
 
 
-class App extends React.PureComponent {
+class App extends Component {
+    state = {
+        sideDrawerOpen: false
+    };
+
+    drawerToggleClickHandler = () => {
+        this.setState((prevState) => {
+            return {sideDrawerOpen: !prevState.sideDrawerOpen};
+        });
+    };
+
+    backDropClickHandler = () => {
+        this.setState({sideDrawerOpen: false});
+    };
+
     render() {
+        let sideDrawer;
+        let backDrop;
+        
+        if(this.state.sideDrawerOpen) {
+            sideDrawer = <SideDrawer/>;
+            backDrop = <BackDrop click={this.backDropClickHandler} />;
+        }
+
         return (
             <Router>
                 <div className="App">
-                    <Navbar />
-                    <SideDrawer />
-                    <BackDrop />
+                    <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
+                    {sideDrawer}
+                    {backDrop}
                     <main>
                         <Route path='/' exact component={Home} />
                         <Route path='/reroll' component={Reroll} />

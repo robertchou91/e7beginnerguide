@@ -8,7 +8,7 @@ const Navbar = props => (
 	<header className="navbar">
 		<nav className="navbar__navigation">
 			<div>
-				<DrawerToggleButton />
+				<DrawerToggleButton click={props.drawerClickHandler} />
 			</div>
 			<div className="navbar__brand">
 				<Link to='/'><img className="owner-logo" src={raphi} alt="icon" /></Link>
