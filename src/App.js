@@ -25,6 +25,10 @@ class App extends Component {
         this.setState({sideDrawerOpen: false});
     };
 
+    sideDrawerClosedHandler = () => {
+        this.setState({sideDrawerOpen: false});
+      }
+
     render() {
         let backDrop;
         
@@ -36,7 +40,10 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
-                    <SideDrawer show={this.state.sideDrawerOpen} />
+                    <SideDrawer 
+                        show={this.state.sideDrawerOpen}
+                        close={this.sideDrawerClosedHandler}
+                    />
                     {backDrop}
                     <main>
                         <Route path='/' exact component={Home} />

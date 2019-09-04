@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import raphi from '../../images/raphi.png';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 
@@ -10,13 +10,14 @@ const Navbar = props => (
 			<div className="navbar__toggle-button">
 				<DrawerToggleButton click={props.drawerClickHandler} />
 			</div>
+			<div className="navbar__spacer"></div>
 			<div className="navbar__brand">
 				<Link to='/'><img className="owner-logo" src={raphi} alt="icon" /></Link>
 			</div>
 			<ul className="navbar__list">
-				<li className="navbar__list-item"><Link to='/'>Home</Link></li>
-				<li className="navbar__list-item"><Link to='/reroll'>Reroll</Link></li>
-				<li className="navbar__list-item"><Link to='/equipment'>Equipment</Link></li>
+				<li className="navbar__list-item"><NavLink to='/' activeClassName={"active"} exact>Home</NavLink></li>
+				<li className="navbar__list-item"><NavLink to='/reroll' activeClassName={"active"}>Reroll</NavLink></li>
+				<li className="navbar__list-item"><NavLink to='/equipment' activeClassName={"active"}>Equipment</NavLink></li>
 			</ul>
 		</nav>
 	</header>

@@ -1,3 +1,6 @@
+@import "breakpoints.scss";
+@import "color.scss";
+
 //DrawerToggleButton
 .toggle-button {
     display: flex;
@@ -24,11 +27,11 @@
 //SideDrawer
 .sidedrawer {
     height: 100%;
-    background-color: #1a1a1b;
+    background-color: $component-black-background;
     position: fixed;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 65%;
     // check this later
     max-width: 40rem;
     z-index: 200;
@@ -45,30 +48,26 @@
         display: flex;
         flex-direction: column;
         box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5); 
-        border: 1px solid #343536;
+        border: 1px solid $gray-border-color;
         //work on this later
         // justify-content: center;
     }
 
     &__list-item {
         text-align: center;
+        padding: 1rem;
+        border-bottom: 1px solid $gray-border-color;
     }
 
     a {
-        color: white;
+        color: $font-color;
         text-decoration: none;
         font-size: 1.5rem;
-
-        &:hover,
-        &:active {
-            // change this later
-            color: green;
-        }
     }
-}
 
-@media (min-width: 769px) {
-    .sidedrawer {
+    @include desktop {
         display: none;
     }
+    
 }
+

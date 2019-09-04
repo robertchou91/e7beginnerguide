@@ -1,6 +1,9 @@
 @import "navbar.scss";
 @import "sidedrawer.scss";
 @import "backdrop.scss";
+@import "breakpoints.scss";
+@import "color.scss";
+
 
 *,
 *::before,
@@ -21,10 +24,11 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    background-color: #030303;
-    color: #D7DADC;
+    background-color: $black-background;
+    color: $font-color;
     //height 100vh?
     height: 100%;
+    margin-top: 8rem;
 }
 
 
@@ -34,7 +38,8 @@ body {
     height: 100%;
 }
 
-main {
-    margin-top: 6rem;
+
+a.active {
+    background-color: $grey-highlight;
 }
 
