@@ -24,8 +24,7 @@
 //SideDrawer
 .sidedrawer {
     height: 100%;
-    background-color: #585858;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5); 
+    background-color: #1a1a1b;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,12 +32,20 @@
     // check this later
     max-width: 40rem;
     z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+
+    &.open {
+        transform: translateX(0);
+    }
 
     &__list {
         height: 100%;
         list-style: none;
         display: flex;
         flex-direction: column;
+        box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5); 
+        border: 1px solid #343536;
         //work on this later
         // justify-content: center;
     }
@@ -60,3 +67,8 @@
     }
 }
 
+@media (min-width: 769px) {
+    .sidedrawer {
+        display: none;
+    }
+}
