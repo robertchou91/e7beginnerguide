@@ -6,7 +6,7 @@ import Reroll from './components/Reroll';
 import Equipment from './components/Equipment';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import BackDrop from './components/BackDrop/BackDrop';
-import './scss/style.scss';
+import './scss/main.scss';
 
 
 

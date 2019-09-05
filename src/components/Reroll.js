@@ -24,12 +24,12 @@ class Reroll extends Component {
 
 	render() {
 		const { heroes, selectedHero5, selectedHero4 } = this.state;
-		const { content } = rerolldata;
+		const { disclaimer } = rerolldata;
 		
 		return (
-			<div>
-				<div>
-					<h1>Reroll Guide</h1>
+			<div className="reroll">
+				<div className="u-center-text">
+					<h1 className="reroll__title">Reroll Guide</h1>
 				</div>
 				<div>
 					<h3>Table of Contents</h3>
@@ -38,8 +38,7 @@ class Reroll extends Component {
 					<h2>Disclaimer</h2>
 				</div>
 				<div>
-					<p>{content}</p>
-					<p>These are what I would recommend to start with based on my own experience. This rerolling guide is not to pidgeon hole you into specific units. You are free to start with any Hero you want.</p>
+					<p>{disclaimer}</p>
 				</div>
 				<div>
 					<h2>Five Star Heroes</h2>
