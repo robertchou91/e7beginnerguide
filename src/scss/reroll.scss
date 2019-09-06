@@ -5,3 +5,25 @@
         font-size: 3rem;
     }
 }
+.testing {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15%;
+    justify-content: center;
+
+    @include smalldesktop {
+        padding: 0 10%;
+    }
+    
+}
+
+.testing2 {
+    padding: 2rem;
+    flex: 0 33%;
+    // flex-wrap: wrap;
+}
+
+.testing3 {
+    padding: 2rem;
+    // flex: 20%;
+}

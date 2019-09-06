@@ -28,19 +28,35 @@ body {
     background-color: $black-background;
     color: $font-color;
     //height 100vh?
-    height: 100%;
-    margin-top: 8rem;
-    padding: 0 8rem 0 8rem;
+    // height: 100%;
+    padding: 0 15rem 0 15rem;
+
+    @include mobile {
+        padding: 0 6rem 0 6rem;
+    }
 }
 
 
 //App.js
 .App {
     // 100vh for newer browser
-    height: 100%;
+    // height: 100%;
+}
+
+// make classname
+main {
+    margin-top: 8rem;
+    padding-bottom: 5rem;
 }
 
 a.active {
     background-color: $grey-highlight;
 }
 
+
+
+// generic css setting
+
+.u-center-text {
+    text-align: center;
+}

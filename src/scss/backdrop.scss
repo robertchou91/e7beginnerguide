@@ -25,7 +25,11 @@
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
 
-    @include desktop {
+    @include largedesktop {
+        display: none;
+    }
+
+    @include smalldesktop {
         display: none;
     }
 }

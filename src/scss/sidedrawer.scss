@@ -65,7 +65,11 @@
         font-size: 1.5rem;
     }
 
-    @include desktop {
+    @include largedesktop {
+        display: none;
+    }
+
+    @include smalldesktop {
         display: none;
     }
     

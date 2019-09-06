@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { herodata, rerolldata } from './RerollData';
 
-
 class Reroll extends Component {
 
 	state = {
@@ -42,9 +41,14 @@ class Reroll extends Component {
 				</div>
 				<div>
 					<h2>Five Star Heroes</h2>
-					{heroes.filter(hero => hero.hero5).map((hero, idx) => (
-						<h3 onClick={(e) => this.onSelectDevice(hero)} key={idx}>{hero.hero5}</h3>
-					))}
+					<div className="testing">
+						{heroes.filter(hero => hero.hero5).map((hero, idx) => (
+							<div className="testing2" onClick={() => this.onSelectDevice(hero)} key={idx}>
+								<img src={hero.hero5smallimg} alt={hero.hero5} />
+							</div>
+						))}
+					</div>
+					
 					{selectedHero5 ? (selectedHero5.hero_details.map((hero, idx) => (
 						<div key={idx}>
 							<h4>{hero.reason1}</h4>
@@ -54,9 +58,14 @@ class Reroll extends Component {
 				</div>
 				<div>
 					<h2>Four Star Heroes</h2>
-					{heroes.filter(hero => hero.hero4).map((hero, idx) => (
-						<h4 onClick={(e) => this.onSelectDevice2(hero)} key={idx}>{hero.hero4}</h4>
-					))}
+					<div className="testing">
+						{heroes.filter(hero => hero.hero4).map((hero, idx) => (
+							<div className="testing3" onClick={() => this.onSelectDevice2(hero)} key={idx}>
+								<img src={hero.hero4smallimg} alt={hero.hero4} />
+							</div>
+						))}
+					</div>
+					
 					{selectedHero4 ? (selectedHero4.hero_details.map((hero, idx) => (
 						<div key={idx}>
 							<h4>{hero.reason1}</h4>

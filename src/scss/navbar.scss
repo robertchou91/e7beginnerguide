@@ -80,7 +80,11 @@
     &__toggle-button {
         margin-left: 2rem;
 
-        @include desktop {
+        @include largedesktop {
+            display: none;
+        }
+
+        @include smalldesktop {
             display: none;
         }
 
