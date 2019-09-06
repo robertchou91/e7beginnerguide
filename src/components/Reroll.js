@@ -42,11 +42,8 @@ class Reroll extends Component {
 				</div>
 				<div>
 					<h2>Five Star Heroes</h2>
-					{heroes.filter(hero => hero.hero5good).map((hero, idx) => (
-						<h3 onClick={(e) => this.onSelectDevice(hero)} key={idx}>{hero.hero5good}</h3>
-					))}
-					{heroes.filter(hero => hero.hero5ok).map((hero, idx) => (
-						<h3 onClick={(e) => this.onSelectDevice(hero)} key={idx}>{hero.hero5ok}</h3>
+					{heroes.filter(hero => hero.hero5).map((hero, idx) => (
+						<h3 onClick={(e) => this.onSelectDevice(hero)} key={idx}>{hero.hero5}</h3>
 					))}
 					{selectedHero5 ? (selectedHero5.hero_details.map((hero, idx) => (
 						<div key={idx}>
