@@ -55,7 +55,7 @@
 
     &__list-item {
         text-align: center;
-        padding: 1rem;
+        // padding: 1rem;
         border-bottom: 1px solid $gray-border-color;
     }
 
@@ -63,6 +63,8 @@
         color: $font-color;
         text-decoration: none;
         font-size: 1.5rem;
+        display: block;
+        padding: 1rem;
     }
 
     @include largedesktop {

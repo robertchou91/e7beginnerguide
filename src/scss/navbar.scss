@@ -9,6 +9,7 @@
     left: 0;
     background-color: $component-black-background;
     border-bottom: 1px solid $gray-border-color;
+    z-index: 190;
 
     &__navigation {
         display: flex;

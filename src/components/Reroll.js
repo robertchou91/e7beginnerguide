@@ -39,14 +39,18 @@ class Reroll extends Component {
 				<div>
 					<p>{disclaimer}</p>
 				</div>
-				<div>
+				<div className="reroll__fivestar">
 					<div className="u-center-text">
-						<h2 className="reroll__fivestar">Five Star Heroes</h2>
+						<h2 className="reroll__fivestar--title">Five Star Heroes</h2>
 					</div>
-					<div className="testing">
+					<div className="reroll__fivestar--container">
 						{heroes.filter(hero => hero.hero5).map((hero, idx) => (
-							<div className="testing2" onClick={() => this.onSelectDevice(hero)} key={idx}>
-								<img src={hero.hero5smallimg} alt={hero.hero5} />
+							<div className="reroll__fivestar--list" onClick={() => this.onSelectDevice(hero)} key={idx}>
+								<div className="reroll__fivestar--hero">
+									<p className="hero5name">{hero.hero5}</p>
+									<img className="hero5img" src={hero.hero5smallimg} alt={hero.hero5} />
+								</div>
+								
 							</div>
 						))}
 					</div>
@@ -62,14 +66,17 @@ class Reroll extends Component {
 						</div>
 					}
 				</div>
-				<div>
+				<div className="reroll_fourstar">
 					<div className="u-center-text">
-						<h2 className="reroll__fourstar">Four Star Heroes</h2>
+						<h2 className="reroll__fourstar--title">Four Star Heroes</h2>
 					</div>
-					<div className="testing">
+					<div className="reroll__fourstar--container">
 						{heroes.filter(hero => hero.hero4).map((hero, idx) => (
-							<div className="testing3" onClick={() => this.onSelectDevice2(hero)} key={idx}>
-								<img src={hero.hero4smallimg} alt={hero.hero4} />
+							<div className="reroll__fourstar--list" onClick={() => this.onSelectDevice2(hero)} key={idx}>
+								<div className="reroll__fourstar--hero">
+									<p className="hero4name">{hero.hero4}</p>
+									<img className="hero4img" src={hero.hero4smallimg} alt={hero.hero4} />
+								</div>
 							</div>
 						))}
 					</div>

@@ -1,8 +1,13 @@
 //reroll page
 
 .reroll {
+    background-color: $component-black-background;
+    //think on this
+    border: 1px solid $gray-border-color;
+    border-radius: 1rem;
+    padding: 2rem;
+
     &__title {
-        font-size: 3rem;
         font-size: 5rem;
     }
 
@@ -11,11 +16,116 @@
     }
 
     &__fivestar {
-        font-size: 3.5rem;
+        &--title {
+            font-size: 3.5rem;
+        }
+
+        &--container {
+            display: flex;
+            flex-wrap: wrap;
+            //think this over
+            padding: 0 15%;
+            justify-content: center;
+    
+            @include smalldesktop {
+            //think this over
+            padding: 0 10%;
+            }
+        }
+        
+    
+        &--list {
+            padding: 2rem;
+            flex: 0 33%;
+            
+            // flex-wrap: wrap;
+        }   
+
+        &--hero {
+            height: 100%;
+            width: 100%;
+            background-color: #030303;
+            transform: (skewX(-10deg));
+            border-radius: 1.5rem;
+            border: 1px solid white;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+
+            .hero5name {
+                position: absolute;
+                top: 30%;
+                left: 10%;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            .hero5img {
+                float: right;
+                transform:(skewX(10deg));
+                opacity: 0.8;
+            }
+
+            &:hover > .hero5img {
+                opacity: 1;
+            }
+        }       
     }
+    
 
     &__fourstar {
-        font-size: 3.5rem;
+        &--title {
+            font-size: 3.5rem;
+        }
+
+        &--container {
+            display: flex;
+            flex-wrap: wrap;
+            //think this over
+            padding: 0 3.5%;
+            justify-content: center;
+    
+            @include smalldesktop {
+            //think this over
+            padding: 0 10%;
+            }
+        }
+
+        &--list {
+            padding: 2rem;
+            flex: 0 25%;
+            
+            // flex-wrap: wrap;
+        }  
+        
+        &--hero {
+            height: 100%;
+            width: 100%;
+            background-color: #030303;
+            transform: (skewX(-10deg));
+            border-radius: 1.5rem;
+            border: 1px solid white;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+
+            .hero4name {
+                position: absolute;
+                top: 30%;
+                left: 10%;
+                font-size: 2rem;
+            }
+            .hero4img {
+                float: right;
+                transform:(skewX(10deg));
+                opacity: 0.8;
+            }
+
+            &:hover > .hero4img {
+                opacity: 1;
+            }
+        }  
     }
 
     &__selectedfive {
@@ -23,27 +133,7 @@
         padding: 0 10%;
     }
 }
-.testing {
-    display: flex;
-    flex-wrap: wrap;
-    //think this over
-    padding: 0 15%;
-    justify-content: center;
 
-    @include smalldesktop {
-        //think this over
-        padding: 0 10%;
-    }
-    
-}
 
-.testing2 {
-    padding: 2rem;
-    flex: 0 33%;
-    // flex-wrap: wrap;
-}
 
-.testing3 {
-    padding: 2rem;
-    // flex: 20%;
-}
+
