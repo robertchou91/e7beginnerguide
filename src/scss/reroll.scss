@@ -3,15 +3,35 @@
 .reroll {
     &__title {
         font-size: 3rem;
+        font-size: 5rem;
+    }
+
+    &__disclaimer {
+        font-size: 3.5rem;
+    }
+
+    &__fivestar {
+        font-size: 3.5rem;
+    }
+
+    &__fourstar {
+        font-size: 3.5rem;
+    }
+
+    &__selectedfive {
+        // think this over
+        padding: 0 10%;
     }
 }
 .testing {
     display: flex;
     flex-wrap: wrap;
+    //think this over
     padding: 0 15%;
     justify-content: center;
 
     @include smalldesktop {
+        //think this over
         padding: 0 10%;
     }
     

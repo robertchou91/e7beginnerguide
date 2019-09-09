@@ -33,14 +33,16 @@ class Reroll extends Component {
 				<div>
 					<h3>Table of Contents</h3>
 				</div>
-				<div>
-					<h2>Disclaimer</h2>
+				<div className="u-center-text">
+					<h2 className="reroll__disclaimer">Disclaimer</h2>
 				</div>
 				<div>
 					<p>{disclaimer}</p>
 				</div>
 				<div>
-					<h2>Five Star Heroes</h2>
+					<div className="u-center-text">
+						<h2 className="reroll__fivestar">Five Star Heroes</h2>
+					</div>
 					<div className="testing">
 						{heroes.filter(hero => hero.hero5).map((hero, idx) => (
 							<div className="testing2" onClick={() => this.onSelectDevice(hero)} key={idx}>
@@ -54,10 +56,16 @@ class Reroll extends Component {
 							<h4>{hero.reason1}</h4>
 							<h4>{hero.reason2}</h4>
 						</div>
-					))) : <div>Helloworld</div>}
+					))) : 
+						<div className="u-center-text">
+							<div className="reroll__selectedfive">Helloworld</div>
+						</div>
+					}
 				</div>
 				<div>
-					<h2>Four Star Heroes</h2>
+					<div className="u-center-text">
+						<h2 className="reroll__fourstar">Four Star Heroes</h2>
+					</div>
 					<div className="testing">
 						{heroes.filter(hero => hero.hero4).map((hero, idx) => (
 							<div className="testing3" onClick={() => this.onSelectDevice2(hero)} key={idx}>
