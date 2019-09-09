@@ -56,7 +56,7 @@ class Reroll extends Component {
 					</div>
 					
 					{selectedHero5 ? (selectedHero5.hero_details.map((hero, idx) => (
-						<div key={idx}>
+						<div className="reroll__selected5" key={idx}>
 							<h4>{hero.reason1}</h4>
 							<h4>{hero.reason2}</h4>
 						</div>
