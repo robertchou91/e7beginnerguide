@@ -68,7 +68,7 @@ class Reroll extends Component {
 							</div>
 						))) : 
 							<div className="u-center-text">
-								<div className="reroll__selectedfive">Helloworld</div>
+								<div className="reroll__selectedfive">Select A Hero</div>
 							</div>
 						}
 					</div>
@@ -104,7 +104,7 @@ class Reroll extends Component {
 							</div>
 						))) : 
 							<div className="u-center-text">
-								<div className="reroll__selectedfour">Helloworld</div>
+								<div className="reroll__selectedfour">Select A Hero</div>
 							</div>
 						}
 					</div>
