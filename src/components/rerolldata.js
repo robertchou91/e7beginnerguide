@@ -20,6 +20,14 @@ import sezfull from '../images/sezfull.png';
 import tywinfull from '../images/tywinfull.png';
 import vildredfull from '../images/vildredfull.png';
 
+import angelicafull from '../images/angelicafull.png';
+import arminfull from '../images/arminfull.png';
+import ciddfull from '../images/ciddfull.png';
+import clarissafull from '../images/clarissafull.png';
+import corvusfull from '../images/corvusfull.png';
+import karinfull from '../images/karinfull.png';
+import schurifull from '../images/schurifull.png';
+
 export const rerolldata = {
 	disclaimer: "These are what I would recommend to start with based on my own experience. This rerolling guide is not to pidgeonhole you into specific units. You are free to start with any Hero you want."
 }
@@ -97,6 +105,7 @@ export const herodata = [
 		hero4smallimg: angelicasmall,
 		hero_details: [
 			{
+				hero4fullimg: angelicafull,
 				reason1: "Immunity Buff coverage for the entire team is very valuable when trying to clear Abyss floors and Labyrinth Raid.",
 				reason2: "Have good burst heal on a rather short cooldown which allows new players more room for errors."
 			}
@@ -107,6 +116,7 @@ export const herodata = [
 		hero4smallimg: arminsmall,
 		hero_details: [
 			{
+				hero4fullimg: arminfull,
 				reason1: "In my opinion one of the best tanks when it comes to clearing Abyss. Shield Wall provides team wide barriers for 3 turns while also healing based on target max hp. Flash of Light provides the needed hit chance down debuffs in abyss to prevent your team from taking too much damage.",
 				reason2: "A decent PVP stall tank that has 10% damage mitigation when Shield Wall is on cooldown."
 			}
@@ -117,6 +127,7 @@ export const herodata = [
 		hero4smallimg: ciddsmall,
 		hero_details: [
 			{
+				hero4fullimg: ciddfull,
 				reason1: "Great PVP unit that has a high damage multiplier skill, Hack, that can attack with elemental advantage on any unit as long as he has Speed Buff on him.",
 				reason2: "Very beginner friendly for new players trying to get into the PVP side of Epic Seven. However specialty changing an easy to acquire 3 star unit, Roozid, will definitely make your pvp progression more smoothly. Righteous Thief Roozid and Cidd synergizes well and is usually the most common combo new players use in PVP."
 			}
@@ -127,6 +138,7 @@ export const herodata = [
 		hero4smallimg: clarissasmall,
 		hero_details: [
 			{
+				hero4fullimg: clarissafull,
 				reason1: "Decent farmer although not as good as Vildred.",
 				reason2: "With a couple molagora investment, she can be a decent secondary DPS as well as a defense breaker."
 			}
@@ -137,6 +149,7 @@ export const herodata = [
 		hero4smallimg: corvussmall,
 		hero_details: [
 			{
+				hero4fullimg: corvusfull,
 				reason1: "Strong Guild War unit that is capable of winning in a 1 v 3 scenario versus certain team compositions. When placed in a defense team composition, opposing opponents are forced to build a team capable of killing him or there is a chance that Corvus can time them out.",
 				reason2: "Having no cooldown on Fury's Advent can make him nearly unkillable provided that he has enough Fighting Spirit to keep using it. Other than incredible sustain, Corvus skill kit is overloaded with Stun debuffs as well as the ability to transfer debuffs to an enemy."
 			}
@@ -147,6 +160,7 @@ export const herodata = [
 		hero4smallimg: karinsmall,
 		hero_details: [
 			{
+				hero4fullimg: karinfull,
 				reason1: "Decent single target damage dealer for Wyvern 11 farming when enough gear is invested. If there is no gear invested on her, Karin is still quite good as she provides a rather consistent Defense Break debuff.",
 				reason2: "She requires zero molagora investment to function when it comes to Wyvern 11 farming."
 			}
@@ -157,10 +171,12 @@ export const herodata = [
 		hero4smallimg: schurismall,
 		hero_details: [
 			{
+				hero4fullimg: schurifull,
 				reason1: "Decent Combat Readiness pusher as long as he can crit the enemies. In harder contents like Abyss, Schuri can cycle more turns for the entire team.",
 				reason2: "He has a rather high speed imprint going upwards of 14 speed to the two back slots of the team composition. This is quite useful when it comes to giving the main Combat Readiness pusher the speed needed to go first at the start of PVP."
 			}
 		]
 	},
 ]
+
 

@@ -93,8 +93,15 @@ class Reroll extends Component {
 					<div className="u-center-text">
 						{selectedHero4 ? (selectedHero4.hero_details.map((hero, idx) => (
 							<div className="reroll__selected4" key={idx}>
-								<h4>{hero.reason1}</h4>
-								<h4>{hero.reason2}</h4>
+								<div className="reroll__selected4--image">
+									<img src={hero.hero4fullimg} alt={hero.hero4} />
+								</div>
+								<div className="reroll__selected4--reasons">
+									<ul>
+										<li>{hero.reason1}</li>
+										<li>{hero.reason2}</li>
+									</ul>
+								</div>
 							</div>
 						))) : 
 							<div className="u-center-text">
