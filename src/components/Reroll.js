@@ -83,12 +83,19 @@ class Reroll extends Component {
 						))}
 					</div>
 					
-					{selectedHero4 ? (selectedHero4.hero_details.map((hero, idx) => (
-						<div key={idx}>
-							<h4>{hero.reason1}</h4>
-							<h4>{hero.reason2}</h4>
-						</div>
-					))) : null}
+					<div className="u-center-text">
+						{selectedHero4 ? (selectedHero4.hero_details.map((hero, idx) => (
+							<div className="reroll__selected4" key={idx}>
+								<h4>{hero.reason1}</h4>
+								<h4>{hero.reason2}</h4>
+							</div>
+						))) : 
+							<div className="u-center-text">
+								<div className="reroll__selectedfour">Helloworld</div>
+							</div>
+						}
+					</div>
+					
 				</div>
 			</div>
 		);
