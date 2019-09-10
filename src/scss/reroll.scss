@@ -5,7 +5,7 @@
     //think on this
     border: 1px solid $gray-border-color;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 4rem;
 
     &__title {
         font-size: 5rem;
@@ -13,6 +13,11 @@
 
     &__disclaimer {
         font-size: 3.5rem;
+
+        &--content {
+            font-size: 2rem;
+            font-weight: 300;
+        }
     }
 
     &__fivestar {
@@ -25,6 +30,7 @@
             flex-wrap: wrap;
             //think this over
             padding: 0 15%;
+            margin-bottom: 3rem;
             justify-content: center;
     
             @include smalldesktop {
@@ -37,7 +43,6 @@
         &--list {
             padding: 2rem;
             flex: 0 33%;
-            
             // flex-wrap: wrap;
         }   
 
@@ -84,6 +89,7 @@
         &--image {
             display: inline-block;
             width: 50%;
+
             img {
                 height: 38rem;
                 margin-right: 5rem;
@@ -107,14 +113,17 @@
 
     &__selectedfive {
         // think this over
-        display: inline-block;
         padding: 3rem;
         height: 45rem;
         width: 100rem;
+        display: inline-block;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 1rem;
     }
-    
 
     &__fourstar {
+
         &--title {
             font-size: 3.5rem;
         }
@@ -124,6 +133,7 @@
             flex-wrap: wrap;
             //think this over
             padding: 0 3.5%;
+            margin-bottom: 3rem;
             justify-content: center;
     
             @include smalldesktop {
@@ -181,11 +191,13 @@
         &--image {
             display: inline-block;
             width: 50%;
+
             img {
                 // width: 50%;
                 height: 38rem;
                 margin-right: 5rem;
             }
+
             img:nth-child(-n+3) {
                 height: 35rem;
             }

@@ -33,14 +33,13 @@ class Reroll extends Component {
 				<div>
 					<h3>Table of Contents</h3>
 				</div>
-				<div className="u-center-text">
+				<div className="u-center-text margin-bottom-medium">
 					<h2 className="reroll__disclaimer">Disclaimer</h2>
+					<p className="reroll__disclaimer--content">{disclaimer}</p>
 				</div>
-				<div>
-					<p>{disclaimer}</p>
-				</div>
+				
 				<div className="reroll__fivestar">
-					<div className="u-center-text">
+					<div className="u-center-text margin-bottom-small">
 						<h2 className="reroll__fivestar--title">Five Star Heroes</h2>
 					</div>
 					<div className="reroll__fivestar--container">
@@ -54,7 +53,7 @@ class Reroll extends Component {
 							</div>
 						))}
 					</div>
-					<div className="u-center-text">
+					<div className="u-center-text margin-bottom-medium">
 						{selectedHero5 ? (selectedHero5.hero_details.map((hero, idx) => (
 							<div className="reroll__selected5" key={idx}>
 								<div className="reroll__selected5--image">
@@ -76,7 +75,7 @@ class Reroll extends Component {
 					
 				</div>
 				<div className="reroll_fourstar">
-					<div className="u-center-text">
+					<div className="u-center-text margin-bottom-small">
 						<h2 className="reroll__fourstar--title">Four Star Heroes</h2>
 					</div>
 					<div className="reroll__fourstar--container">
