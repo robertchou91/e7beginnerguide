@@ -13,6 +13,13 @@ import corvussmall from '../images/corvussmall.png';
 import karinsmall from '../images/karinsmall.png';
 import schurismall from '../images/schurismall.png';
 
+import iseriafull from '../images/iseriafull.png';
+import kenfull from '../images/kenfull.png';
+import ravifull from '../images/ravifull.png';
+import sezfull from '../images/sezfull.png';
+import tywinfull from '../images/tywinfull.png';
+import vildredfull from '../images/vildredfull.png';
+
 export const rerolldata = {
 	disclaimer: "These are what I would recommend to start with based on my own experience. This rerolling guide is not to pidgeonhole you into specific units. You are free to start with any Hero you want."
 }
@@ -24,8 +31,9 @@ export const herodata = [
 		hero5smallimg: iseriasmall,
 		hero_details: [
 			{
+				hero5fullimg: iseriafull,
 				reason1: "Unique skill set where is is able to fully reset the cooldown of any ally's skill while also granting herself an extra turn.",
-				reason2: "She has the ability to apply a 2 turn Defense Break and Unbuffable. While Unbuffable might not be useful in PVE, it is an extremely powerful debuff for pvp. Defense Break is universally good in every situation barred bosses that have mechanics that makes debuffing them dangerous."
+				reason2: "She has the ability to apply a 2 turn Defense Break and Unbuffable. While Unbuffable might not be as useful in PVE, it is an extremely powerful debuff for pvp. Defense Break is universally good in every situation barred bosses that have mechanics that makes debuffing them dangerous."
 			}
 		]
 	},
@@ -34,6 +42,7 @@ export const herodata = [
 		hero5smallimg: kensmall,
 		hero_details: [
 			{
+				hero5fullimg: kenfull,
 				reason1: "All-rounder bruiser that is capable of tanking, dealing damage, debuffing (Attack Down, Defense Break, Stun, Burn), and buffing himself with Speed Buff and Vigor (Grants Ken 30% Attack and Defense).",
 				reason2: "One of the best and widely used bruisers in the game when it comes Guild Wars PVP."
 			}
@@ -44,6 +53,7 @@ export const herodata = [
 		hero5smallimg: ravismall,
 		hero_details: [
 			{
+				hero5fullimg: ravifull,
 				reason1: "Her built-in sustain and combat readiness makes her one of the best unit to start out with as she can easily carry most contents the game has to offer.",
 				reason2: "She has high damage multipliers on her first skill, Slaugher, when using Soul Burn which makes bossing quite easy. Her third skill, Devil Drive, also allows fighting a boss with multiple enemies much more manageable as it decrease enemy combat readiness to 0 while also have a 75% chance of stunning."
 			}
@@ -54,6 +64,7 @@ export const herodata = [
 		hero5smallimg: sezsmall,
 		hero_details: [
 			{
+				hero5fullimg: sezfull,
 				reason1: "Very good at farming. Not as good as Vildred but he farms decently fast because of his second skill, Enroach.",
 				reason2: "Despite the nerf to windrider, Sez is still quite good in a cleave team in Arena PVP and Guild Wars but he starts to fall off more and more the higher rank you are in PVP in comparison to other cleave team compositions."
 			}
@@ -64,6 +75,7 @@ export const herodata = [
 		hero5smallimg: tywinsmall,
 		hero_details: [
 			{
+				hero5fullimg: tywinfull,
 				reason1: "Good ice type knight that can tank the wyvern in Wyvern 11 farm and thereby jumpstarting your progression when it comes to gearing your hero units.",
 				reason2: "Can work in an okay cleave team but is definitely not as reliable as the most meta cleave teams in Arena PVP. Guild Wars has more variety in team compositions so there are times where Tywin can work as a part of a cleave team (The enemy team composition is very slow, and not as tanky as the Arena defense teams)."
 			}
@@ -74,6 +86,7 @@ export const herodata = [
 		hero5smallimg: vildredsmall,
 		hero_details: [
 			{
+				hero5fullimg: vildredfull,
 				reason1: "Arguably the best farmer in the game. Farming stages in Epic Seven is important as you level your Phantasma in order to 6 star hero units and Vildred excels in this area. Extremely easy to gear due to Adventure's Path and Labyrinth providing gears that works well with him.",
 				reason2: "The only 5 star hero that has speed as his imprint. Very strong in pvp offense when it comes to cleaving."
 			}

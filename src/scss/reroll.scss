@@ -74,23 +74,43 @@
 
     &__selected5 {
         display: inline-block;
-        padding: 5rem;
-        height: 20%;
-        width: 80%;
+        padding: 3rem;
+        height: 45rem;
+        width: 100rem;
         background-color: black;
         border: 1px solid white;
         border-radius: 1rem;
 
-        h4 {
+        &--image {
+            display: inline-block;
+            width: 50%;
+            img {
+                width: 50%;
+                margin-right: 5rem;
+            }
+        }
+
+        &--reasons {
+            width: 45%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        li {
             color: white;
             font-size: 2rem;
-            font-weight: 300;
+            font-weight: 200;
+            text-align: justify;
+            margin-bottom: 1rem;
         }
     }
 
     &__selectedfive {
         // think this over
-        padding: 0 10%;
+        display: inline-block;
+        padding: 3rem;
+        height: 45rem;
+        width: 100rem;
     }
     
 
