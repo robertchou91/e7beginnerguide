@@ -68,7 +68,9 @@ class Reroll extends Component {
 							</div>
 						))) : 
 							<div className="u-center-text">
-								<div className="reroll__selectedfive">Select A Hero</div>
+								<div className="reroll__selectedfive">
+									<div className="reroll__selectedfive--content">Select A Hero</div>
+								</div>
 							</div>
 						}
 					</div>
