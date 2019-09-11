@@ -17,6 +17,8 @@
         &--content {
             font-size: 2rem;
             font-weight: 300;
+            padding: 0 3rem;
+            text-align: justify;
         }
     }
 
@@ -112,16 +114,14 @@
 
     &__selectedfive {
         // think this over
-        // padding: 3rem;
         height: 45rem;
         width: 100rem;
         position: relative;
         display: inline-block;
-        // margin-right: 0;
         background-image: linear-gradient(
         to right bottom,
-        rgba($gray-border-color, 0.75),
-        rgba($black-background, 0.75)),
+        rgba($gray-border-color, 0.7),
+        rgba($black-background, 0.7)),
         url(../images/selectboxbg.jpg);
         background-size: cover;
         border: 1px solid white;
@@ -234,10 +234,25 @@
 
     &__selectedfour {
         // think this over
-        display: inline-block;
-        padding: 3rem;
         height: 45rem;
         width: 100rem;
+        position: relative;
+        display: inline-block;
+        background-image: linear-gradient(
+        to right bottom,
+        rgba($gray-border-color, 0.7),
+        rgba($black-background, 0.7)),
+        url(../images/selectboxbg.jpg);
+        background-size: cover;
+        border: 1px solid white;
+        border-radius: 1rem;
+
+        &--content {
+            font-size: 4rem;
+            position: absolute;
+            top: 40%;
+            left: 37.5%;
+        }
     }
     
 }

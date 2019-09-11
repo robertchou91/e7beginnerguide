@@ -29,7 +29,8 @@ import karinfull from '../images/karinfull.png';
 import schurifull from '../images/schurifull.png';
 
 export const rerolldata = {
-	disclaimer: "These are what I would recommend to start with based on my own experience. This rerolling guide is not to pidgeonhole you into specific units. You are free to start with any Hero you want."
+	introduction: "",
+	disclaimer: "This Reroll Guide is not about explaining how to reroll or what is the fastest approach to rerolling in this game. This guide is about laying the hero options in front of you and giving you some suggestions on which units to start the game out with. These are what I would recommend to start with based on my own experience. This rerolling guide is not to pidgeonhole you into specific units. You are free to start with any Hero you want."
 }
 
 

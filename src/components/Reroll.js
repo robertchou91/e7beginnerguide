@@ -37,7 +37,7 @@ class Reroll extends Component {
 					<h2 className="reroll__disclaimer">Disclaimer</h2>
 					<p className="reroll__disclaimer--content">{disclaimer}</p>
 				</div>
-				
+				<hr className="linebreak" />
 				<div className="reroll__fivestar">
 					<div className="u-center-text margin-bottom-small">
 						<h2 className="reroll__fivestar--title">Five Star Heroes</h2>
@@ -76,6 +76,7 @@ class Reroll extends Component {
 					</div>
 					
 				</div>
+				<hr className="linebreak"/>
 				<div className="reroll_fourstar">
 					<div className="u-center-text margin-bottom-small">
 						<h2 className="reroll__fourstar--title">Four Star Heroes</h2>
@@ -105,9 +106,11 @@ class Reroll extends Component {
 								</div>
 							</div>
 						))) : 
-							<div className="u-center-text">
-								<div className="reroll__selectedfour">Select A Hero</div>
-							</div>
+						<div className="u-center-text">
+						<div className="reroll__selectedfour">
+							<div className="reroll__selectedfive--content">Select A Hero</div>
+						</div>
+					</div>
 						}
 					</div>
 					

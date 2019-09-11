@@ -38,10 +38,6 @@ body {
 
 
 //App.js
-.App {
-    // 100vh for newer browser
-    // height: 100%;
-}
 
 // make classname
 main {
@@ -67,4 +63,10 @@ a.active {
 
 .margin-bottom-medium {
     margin-bottom: 5rem;
+}
+
+.linebreak {
+    margin-bottom: 5rem;
+    // think on htis
+    border-color: $gray-border-color;
 }
