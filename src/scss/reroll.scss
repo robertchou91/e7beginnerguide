@@ -37,8 +37,7 @@
             //think this over
             padding: 0 10%;
             }
-        }
-        
+        }     
     
         &--list {
             padding: 2rem;
@@ -159,7 +158,6 @@
         &--list {
             padding: 2rem;
             flex: 0 25%;
-            
             // flex-wrap: wrap;
         }  
         
@@ -181,6 +179,7 @@
                 left: 10%;
                 font-size: 2rem;
             }
+
             .hero4img {
                 float: right;
                 transform:(skewX(10deg));
