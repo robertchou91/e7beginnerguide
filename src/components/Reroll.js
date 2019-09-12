@@ -23,7 +23,7 @@ class Reroll extends Component {
 
 	render() {
 		const { heroes, selectedHero5, selectedHero4 } = this.state;
-		const { disclaimer } = rerolldata;
+		const { disclaimer, suggestion } = rerolldata;
 		
 		return (
 			<div className="reroll">
@@ -34,7 +34,9 @@ class Reroll extends Component {
 					<h3>Table of Contents</h3>
 				</div>
 				<div className="u-center-text margin-bottom-medium">
-					<h2 className="reroll__disclaimer">Disclaimer</h2>
+					<div className="margin-bottom-small">
+						<h2 className="reroll__disclaimer">Disclaimer</h2>
+					</div>
 					<p className="reroll__disclaimer--content">{disclaimer}</p>
 				</div>
 				<hr className="linebreak" />
@@ -92,7 +94,7 @@ class Reroll extends Component {
 						))}
 					</div>
 					
-					<div className="u-center-text">
+					<div className="u-center-text margin-bottom-medium">
 						{selectedHero4 ? (selectedHero4.hero_details.map((hero, idx) => (
 							<div className="reroll__selected4" key={idx}>
 								<div className="reroll__selected4--image">
@@ -106,14 +108,20 @@ class Reroll extends Component {
 								</div>
 							</div>
 						))) : 
-						<div className="u-center-text">
-						<div className="reroll__selectedfour">
-							<div className="reroll__selectedfive--content">Select A Hero</div>
-						</div>
-					</div>
+							<div className="u-center-text">
+								<div className="reroll__selectedfour">
+									<div className="reroll__selectedfive--content">Select A Hero</div>
+								</div>
+							</div>
 						}
 					</div>
-					
+				</div>
+				<hr className="linebreak"/>
+				<div className="u-center-text margin-bottom-medium">
+					<div className="margin-bottom-small">
+						<h2 className="reroll__suggestion">Suggestions</h2>
+					</div>
+					<p className="reroll__disclaimer--content">{suggestion}</p>
 				</div>
 			</div>
 		);

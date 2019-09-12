@@ -30,7 +30,8 @@ import schurifull from '../images/schurifull.png';
 
 export const rerolldata = {
 	introduction: "",
-	disclaimer: "This Reroll Guide is not about explaining how to reroll or what is the fastest approach to rerolling in this game. This guide is about laying the hero options in front of you and giving you some suggestions on which units to start the game out with. These are what I would recommend to start with based on my own experience. This rerolling guide is not to pidgeonhole you into specific units. You are free to start with any Hero you want."
+	disclaimer: "This Reroll Guide is not about explaining how to reroll or what is the fastest approach to rerolling in this game. This guide is about laying the hero options in front of you and giving you some suggestions on which units to start the game out with. These are what I would recommend to start with based on my own experience. This rerolling guide is not to pidgeonhole you into specific units. You are free to start with any Hero you want.",
+	suggestion: "Generally when reroll people look for their preferred five star unit and one other four star unit to start their adventure in Epic Seven (you can get more four stars if you're lucky in that one batch of ten pulls). So with that in mind there are a couple four and five star combinations that are worth starting out with or at least something to be considered. Choosing your five star units based on PVP, PVE, and Farming are generally what I would suggest during your Selective Selection."
 }
 
 
