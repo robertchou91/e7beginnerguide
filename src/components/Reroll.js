@@ -117,12 +117,58 @@ class Reroll extends Component {
 					</div>
 				</div>
 				<hr className="linebreak"/>
-				<div className="u-center-text margin-bottom-medium">
-					<div className="margin-bottom-small">
-						<h2 className="reroll__suggestion">Suggestions</h2>
+				<div className="reroll__suggestion">
+					<div className="u-center-text margin-bottom-medium">
+						<div className="margin-bottom-small">
+							<h2 className="reroll__suggestion-title">Suggestions</h2>
+						</div>
+						<p className="reroll__suggestion-content">{suggestion}</p>
 					</div>
-					<p className="reroll__disclaimer--content">{suggestion}</p>
+					<div className="reroll__suggestion-pvp">
+						<div className="reroll__suggestion-pvp--title">PVP</div>
+						<div className="reroll__suggsetion-pvp--content">
+							<div>
+								<div>Fire Ken 4 star unit</div>
+								<div>info</div>
+							</div>
+							<div>
+								<div>Vildred 4 star unit</div>
+								<div>info</div>
+							</div>
+							<div>
+								<div>Iseria 4 star unit</div>
+								<div>info</div>
+							</div>
+						</div>
+					</div>
+					<div className="reroll__suggestion-pve">
+						<div className="reroll__suggestion-pve--title">PVE</div>
+						<div className="reroll__suggsetion-pve--content">
+							<div>
+								<div>
+									<div>Ravi 4 star unit</div>
+									<div>Vildred 4 star unit</div>
+									<div>Fire Ken 4 star unit</div>
+								</div>
+								<div>info</div>
+							</div>
+						</div>
+					</div>
+					<div className="reroll__suggestion-farming">
+						<div className="reroll__suggestion-farming--title">Farming</div>
+						<div className="reroll__suggsetion-pvp--content">
+							<div>
+								<div>
+									<div>Vildred 4 star unit</div>
+									<div>Tywin 4 star unit</div>
+									<div>Sez 4 star unit</div>
+								</div>
+								<div>info</div>
+							</div>
+						</div>
+					</div>
 				</div>
+				
 			</div>
 		);
 	}
