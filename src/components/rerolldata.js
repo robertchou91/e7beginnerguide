@@ -13,6 +13,9 @@ import corvussmall from '../images/corvussmall.png';
 import karinsmall from '../images/karinsmall.png';
 import schurismall from '../images/schurismall.png';
 
+import montmorancysmall from '../images/montmorancysmall.png';
+import klurismall from '../images/klurismall.png';
+
 import iseriafull from '../images/iseriafull.png';
 import kenfull from '../images/kenfull.png';
 import ravifull from '../images/ravifull.png';
@@ -27,6 +30,9 @@ import clarissafull from '../images/clarissafull.png';
 import corvusfull from '../images/corvusfull.png';
 import karinfull from '../images/karinfull.png';
 import schurifull from '../images/schurifull.png';
+
+import montmorancyfull from '../images/montmorancyfull.png';
+import klurifull from '../images/klurifull.png';
 
 export const rerolldata = {
 	introduction: "",
@@ -174,6 +180,29 @@ export const herodata = [
 		hero_details: [
 			{
 				hero4fullimg: schurifull,
+				reason1: "Decent Combat Readiness pusher as long as he can crit the enemies. In PVE contents like Abyss, Schuri can cycle more turns for the entire team.",
+				reason2: "He has a rather high speed imprint going upwards of 14 speed to the two back slots of the team composition. This is quite useful when it comes to giving the main Combat Readiness pusher the speed needed to go first at the start of PVP."
+			}
+		]
+	},
+	////
+	{
+		hero3: "Montmorancy",
+		hero3smallimg: montmorancysmall,
+		hero_details: [
+			{
+				hero3fullimg: montmorancyfull,
+				reason1: "Decent single target damage dealer for Wyvern 11 farming when enough gear is invested. If there is no gear invested on her, Karin is still quite good as she provides a rather consistent Defense Break debuff.",
+				reason2: "She requires zero molagora investment to function when it comes to Wyvern 11 farming."
+			}
+		]
+	},
+	{
+		hero3: "Kluri",
+		hero3smallimg: klurismall,
+		hero_details: [
+			{
+				hero3fullimg: klurifull,
 				reason1: "Decent Combat Readiness pusher as long as he can crit the enemies. In PVE contents like Abyss, Schuri can cycle more turns for the entire team.",
 				reason2: "He has a rather high speed imprint going upwards of 14 speed to the two back slots of the team composition. This is quite useful when it comes to giving the main Combat Readiness pusher the speed needed to go first at the start of PVP."
 			}
