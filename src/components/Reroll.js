@@ -35,7 +35,7 @@ class Reroll extends Component {
 
 	render() {
 		const { heroes, selectedHero5, selectedHero4, selectedHero3 } = this.state;
-		const { disclaimer, suggestion } = rerolldata;
+		const { disclaimer, suggestion, notes1, notes2 } = rerolldata;
 		
 		return (
 			<div className="reroll">
@@ -74,6 +74,7 @@ class Reroll extends Component {
 									<img src={hero.hero5fullimg} alt={hero.hero5} />
 								</div>
 								<div className="reroll__selected5--reasons">
+									<div className="reroll__selected5--name">{hero.hero5}</div>
 									<ul>
 										<li>{hero.reason1}</li>
 										<li>{hero.reason2}</li>
@@ -111,6 +112,7 @@ class Reroll extends Component {
 									<img src={hero.hero4fullimg} alt={hero.hero4} />
 								</div>
 								<div className="reroll__selected4--reasons">
+									<div className="reroll__selected4--name">{hero.hero4}</div>
 									<ul>
 										<li>{hero.reason1}</li>
 										<li>{hero.reason2}</li>
@@ -148,6 +150,7 @@ class Reroll extends Component {
 									<img src={hero.hero3fullimg} alt={hero.hero3} />
 								</div>
 								<div className="reroll__selected3--reasons">
+									<div className="reroll__selected3--name">{hero.hero3}</div>
 									<ul>
 										<li>{hero.reason1}</li>
 										<li>{hero.reason2}</li>
@@ -173,19 +176,19 @@ class Reroll extends Component {
 					</div>
 					<div className="reroll__suggestion-priority">
 						<div className="reroll__suggestion-priority--high">
-							<div className="fontsize-medium">High Priority</div>
+							<div className="reroll__suggestion-priority--title">High Priority</div>
 							<div><img src={kensmall} alt="Ken" /></div>
 							<div><img src={vildredsmall} alt="Vildred" /></div>
 						</div>
 						<hr className="linebreak-mini" />
 						<div className="reroll__suggestion-priority--medium">
-							<div className="fontsize-medium">Medium Priority</div>
+							<div className="reroll__suggestion-priority--title">Medium Priority</div>
 							<div><img src={iseriasmall} alt="Iseria" /></div>
 							<div><img src={ravismall} alt="Ravi" /></div>
 						</div>
 						<hr className="linebreak-mini" />
 						<div className="reroll__suggestion-priority--low margin-bottom-small">
-							<div className="fontsize-medium">Low Priority</div>
+							<div className="reroll__suggestion-priority--title">Low Priority</div>
 							<div><img src={tywinsmall} alt="Tywin" /></div>
 							<div><img src={sezsmall} alt="Sez" /></div>
 						</div>
@@ -193,8 +196,8 @@ class Reroll extends Component {
 					<div className="reroll__suggestion-notes">
 						<div>Notes</div>
 						<ul>
-							<li>notes notes notes</li>
-							<li>notes notes notes</li>
+							<li>{notes1}</li>
+							<li>{notes2}</li>
 							<li>notes notes notes</li>
 						</ul>
 					</div>
