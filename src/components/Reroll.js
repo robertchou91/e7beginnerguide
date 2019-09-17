@@ -35,15 +35,21 @@ class Reroll extends Component {
 
 	render() {
 		const { heroes, selectedHero5, selectedHero4, selectedHero3 } = this.state;
-		const { disclaimer, suggestion, notes1, notes2, notes3 } = rerolldata;
+		const { disclaimer, suggestion, notes1, notes2, notes3, notes4 } = rerolldata;
 		
 		return (
 			<div className="reroll">
 				<div className="u-center-text">
-					<h1 className="reroll__title">Reroll Guide</h1>
+					<h1 className="reroll__title margin-bottom-small">Reroll Guide</h1>
 				</div>
-				<div>
-					<h3>Table of Contents</h3>
+				<div className="reroll__toc margin-bottom-small">
+					<p className="reroll__toc-title">Table of Contents</p>
+					<ul className="reroll__toc-list">
+						<li><a href="#fivestar">1. Five Star Heroes</a></li>
+						<li><a href="#fourstar">2. Four Star Heroes</a></li>
+						<li><a href="#threestar">3 Three Star Heroes</a></li>
+						<li><a href="#suggestions">4. Suggestions</a></li>
+					</ul>
 				</div>
 				<div className="u-center-text margin-bottom-medium">
 					<div className="margin-bottom-small">
@@ -51,7 +57,7 @@ class Reroll extends Component {
 					</div>
 					<p className="reroll__disclaimer--content">{disclaimer}</p>
 				</div>
-				<hr className="linebreak" />
+				<hr id="fivestar" className="linebreak" />
 				<div className="reroll__fivestar">
 					<div className="u-center-text margin-bottom-small">
 						<h2 className="reroll__fivestar--title">Five Star Heroes</h2>
@@ -90,7 +96,7 @@ class Reroll extends Component {
 						}
 					</div>
 				</div>
-				<hr className="linebreak"/>
+				<hr id="fourstar" className="linebreak"/>
 				<div className="reroll_fourstar">
 					<div className="u-center-text margin-bottom-small">
 						<h2 className="reroll__fourstar--title">Four Star Heroes</h2>
@@ -128,7 +134,7 @@ class Reroll extends Component {
 						}
 					</div>
 				</div>
-				<hr className="linebreak"/>
+				<hr id="threestar" className="linebreak"/>
 				<div className="reroll_threestar">
 					<div className="u-center-text margin-bottom-small">
 						<h2 className="reroll__fourstar--title">Three Star Heroes</h2>
@@ -166,7 +172,7 @@ class Reroll extends Component {
 						}
 					</div>
 				</div>
-				<hr className="linebreak"/>
+				<hr id="suggestions" className="linebreak"/>
 				<div className="reroll__suggestion">
 					<div className="u-center-text margin-bottom-medium">
 						<div className="margin-bottom-small">
@@ -193,12 +199,13 @@ class Reroll extends Component {
 							<div><img src={sezsmall} alt="Sez" /></div>
 						</div>
 					</div>
-					<div className="reroll__suggestion-notes">
+					<div className="reroll__suggestion-notes margin-bottom-medium">
 						<div className="reroll__suggestion-notes--title">Notes</div>
 						<ul>
 							<li>{notes1}</li>
 							<li>{notes2}</li>
 							<li>{notes3}</li>
+							<li>{notes4}</li>
 						</ul>
 					</div>
 				</div>
