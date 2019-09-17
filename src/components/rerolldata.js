@@ -37,9 +37,10 @@ import klurifull from '../images/klurifull.png';
 export const rerolldata = {
 	introduction: "",
 	disclaimer: "This Reroll Guide is not about explaining how to reroll or what is the fastest approach to rerolling in this game. This guide is about me giving you some suggestions on which units to start the game out with based on my own experience. This rerolling guide is not to pidgeonhole you into specific units. You are free to start with any Hero you want.",
-	suggestion: "Generally when people are rerolling, they look for their preferred five star unit and one other four star unit to start their adventure (you can get more four stars if you are lucky in that one batch of ten pulls). So with that in mind I have made different levels of priorities of the five star units that I think are a good choice to start with in your selective summons below. You should be choosing your five star unit based on what you want to do in the game. For example if you want to focus purely on PVE then maybe Vildred and Ravi are the better options. If you want to gamble on the chance of pulling Tamarinne or Dark Corvus in the future, it is not a bad choice to start with Iseria. Just a reminder there are some three star units that are great and should not be overlooked (I have mentioned two specific three star units above).",
+	suggestion: "Generally when people are rerolling, they look for their preferred five star unit and one other four star unit to start their adventure (you can get more four stars if you are lucky in that one batch of ten pulls). I do not think any of the natural element four stars are game changing for your progession so Selective Summon is mostly about finding the right starting five star unit for you. So with that in mind I have made different levels of priorities of the five star units that I think are a good choice to start with in your selective summons below. You should be choosing your five star unit based on what you want to do in the game. For example if you want to focus purely on PVE then maybe Vildred and Ravi are the better options. If you want to gamble on the chance of pulling Tamarinne or Dark Corvus in the future, it is not a bad choice to start with Iseria. Just a reminder there are some three star units that are great and should not be overlooked (I have mentioned two specific three star units above).",
 	notes1: "Ken and Vildred have the most value in terms of being standalone and being useful is almost every content in the game PVP and PVE.",
-	notes2: "Iseria and Ravi are niche units that shine in certain scenarios. Unless you have the units that works best for Iseria or you are mostly focused on the PVE aspect, then they are not as good as Ken and Vildred for selections."
+	notes2: "Iseria and Ravi are niche units that shine in certain scenarios. Unless you have the units that works best with Iseria or you are mostly focused on the PVE aspect, then they are not as good as Ken and Vildred for selections.",
+	notes3: "Units placed in the low priority are not really units I would suggest to start out with but they can make some parts of your progressions easier just not as much as the high and medium priority overall."
 }
 
 
@@ -88,7 +89,7 @@ export const herodata = [
 				hero5: "Sez",
 				hero5fullimg: sezfull,
 				reason1: "Very good at farming. Not as good as Vildred but he farms decently fast because of his second skill, Enroach.",
-				reason2: "Despite the nerf to windrider, Sez is still decent in a cleave team in Arena PVP and Guild Wars but he starts to fall off more and more the higher rank you are in PVP in comparison to other cleave team compositions."
+				reason2: "Despite the nerf to windrider, Sez is still an okay option in a cleave team in Arena PVP and Guild Wars but he starts to fall off more and more the higher rank you are in PVP in comparison to other cleave team compositions."
 			}
 		]
 	},
@@ -111,8 +112,8 @@ export const herodata = [
 			{
 				hero5: "Vildred",
 				hero5fullimg: vildredfull,
-				reason1: "Arguably the best farmer in the game. Farming stages in Epic Seven is important as you level your Phantasma in order to 6 star hero units and Vildred excels in this area. Easy to gear due to Adventure's Path and Labyrinth providing gears that works well with him.",
-				reason2: "The only 5 star hero that has speed as his imprint. Very strong in pvp offense when it comes to cleaving."
+				reason1: "Arguably the best farmer in the game. Farming in Epic Seven is important as you level your Phantasma in order to 6 star hero units and Vildred excels in this area. Easy to gear due to Adventure's Path and Labyrinth providing gears that works well with him.",
+				reason2: "The only 5 star hero that has speed as his imprint. Strong in pvp offense when it comes to cleaving."
 			}
 		]
 	},
@@ -135,7 +136,7 @@ export const herodata = [
 			{
 				hero4: "Armin",
 				hero4fullimg: arminfull,
-				reason1: "In my opinion one of the best tanks when it comes to clearing Abyss. Shield Wall provides team wide barriers for 3 turns while also healing based on target max hp. Flash of Light provides the needed Hit Chance Down debuffs in abyss to prevent your team from taking too much damage. Flash of Light also provides a 3 turn Poison debuff (Poison debuffs are very good in Abyss since enemies and boss HP are very large).",
+				reason1: "In my opinion one of the best tanks when it comes to clearing Abyss. Shield Wall provides team wide barriers for 3 turns while also healing based on target max hp. Flash of Light provides the needed Hit Chance Down debuffs in abyss to prevent your team from taking too much damage. Flash of Light also provides a 3 turn Poison debuff (Poison debuffs are very good in Abyss since enemies and bosses have high HP).",
 				reason2: "An okay PVP stall tank that has 10% damage mitigation when Shield Wall is on cooldown."
 			}
 		]
@@ -147,7 +148,7 @@ export const herodata = [
 			{
 				hero4: "Cidd",
 				hero4fullimg: ciddfull,
-				reason1: "Great PVP unit with a high damage multiplier skill, Hack, that can attack with elemental advantage on any unit as long as he has Speed Buff on him.",
+				reason1: "Great unit with a high damage multiplier skill, Hack, that can attack with elemental advantage on any unit as long as he has Speed Buff on him.",
 				reason2: "Very beginner friendly for new players trying to get into the PVP side of Epic Seven. Righteous Thief Roozid and Cidd synergizes well and is usually the most common combo new players use in PVP."
 			}
 		]

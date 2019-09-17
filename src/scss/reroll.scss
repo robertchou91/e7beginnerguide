@@ -443,7 +443,17 @@
         }
 
         &-notes {
-            padding: 0 5rem;
+            padding: 0 6rem;
+
+            &--title {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            li {
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
         }
     }
     
