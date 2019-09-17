@@ -9,6 +9,10 @@
     border-radius: 1rem;
     padding: 4rem;
 
+    @include mobile {
+        padding: 0;
+    }
+
     &__title {
         font-size: 5rem;
     }
@@ -21,6 +25,11 @@
             font-weight: 300;
             padding: 0 5rem;
             text-align: justify;
+
+            @include mobile {
+                padding: 0 1rem;
+                font-size: 1.6rem;
+            }
         }
     }
 
@@ -29,19 +38,20 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
     &__toc {
-        border: 1px solid $gray-border-color;
+        border: 1px solid white;
         background-color: #171717;
         border-radius: 1rem;
         font-size: 1.3rem;
         display: table;
         padding: 4rem 2rem;
         margin-left: 5rem;
-        // width: auto;
+        width: auto;
 
         &-title {
             font-weight: 700;
             font-size: 1.7rem;
             text-align: center;
+            margin-bottom: 0.5rem;
         }
 
         li {
@@ -77,6 +87,11 @@
             margin-bottom: 3rem;
             justify-content: center;
     
+            @include mobile {
+                padding: 0 1rem;
+                margin-bottom: 1rem;
+            }
+
             @include smalldesktop {
             //think this over
             padding: 0 10%;
@@ -87,11 +102,17 @@
             padding: 2rem;
             flex: 0 33%;
             // flex-wrap: wrap;
+
+            @include mobile {
+                padding: 1rem;
+                flex: 0 50%;
+            }
+
         }   
 
         &--hero {
-            height: 100%;
-            width: 100%;
+            // height: 100%;
+            // width: 100%;
             background-color: $black-background;
             transform: (skewX(-10deg));
             border-radius: 1.5rem;
@@ -107,11 +128,21 @@
                 left: 10%;
                 font-size: 2rem;
                 font-weight: 700;
+
+                @include mobile {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
             }
             .hero5img {
                 float: right;
                 transform:(skewX(10deg));
                 opacity: 0.8;
+
+                @include mobile {
+                    width: 10rem;
+                }
+                
             }
 
             &:hover > .hero5img {
@@ -175,6 +206,11 @@
         border: 1px solid white;
         border-radius: 1rem;
 
+        @include mobile {
+            width: 100%;
+            background-position: center;
+        }
+
         &--content {
             font-size: 4rem;
             position: absolute;
@@ -202,7 +238,12 @@
             padding: 0 3.5%;
             margin-bottom: 3rem;
             justify-content: center;
-    
+            
+            @include mobile {
+                padding: 0 1rem;
+                margin-bottom: 1rem;
+            }
+
             @include smalldesktop {
             //think this over
             padding: 0 10%;
@@ -213,6 +254,11 @@
             padding: 2rem;
             flex: 0 25%;
             // flex-wrap: wrap;
+
+            @include mobile {
+                padding: 1rem;
+                flex: 0 50%;
+            }
         }  
         
         &--hero {
@@ -232,12 +278,22 @@
                 top: 30%;
                 left: 10%;
                 font-size: 2rem;
+
+                @include mobile {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    left: 7%;
+                }
             }
 
             .hero4img {
                 float: right;
                 transform:(skewX(10deg));
                 opacity: 0.8;
+
+                @include mobile {
+                    width: 10rem;
+                }
             }
 
             &:hover > .hero4img {
@@ -306,6 +362,11 @@
         border: 1px solid white;
         border-radius: 1rem;
 
+        @include mobile {
+            width: 100%;
+            background-position: center;
+        }
+
         &--content {
             font-size: 4rem;
             position: absolute;
@@ -333,7 +394,12 @@
             padding: 0 3.5%;
             margin-bottom: 3rem;
             justify-content: center;
-    
+
+            @include mobile {
+                padding: 0;
+                margin-bottom: 1rem;
+            }
+
             @include smalldesktop {
             //think this over
             padding: 0 10%;
@@ -344,6 +410,11 @@
             padding: 2rem;
             flex: 0 30%;
             // flex-wrap: wrap;
+
+            @include mobile {
+                padding: 0.5rem;
+                flex: 0 50%;
+            }
         }  
         
         &--hero {
@@ -363,12 +434,22 @@
                 top: 30%;
                 left: 10%;
                 font-size: 2rem;
+
+                @include mobile {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    left: 6%;
+                }
             }
 
             .hero3img {
                 float: right;
                 transform:(skewX(10deg));
                 opacity: 0.8;
+
+                @include mobile {
+                    width: 10rem;
+                }
             }
 
             &:hover > .hero3img {
@@ -432,11 +513,22 @@
         border: 1px solid white;
         border-radius: 1rem;
 
+        @include mobile {
+            width: 100%;
+            background-position: center;
+        }
+
         &--content {
+            width: 100%;
             font-size: 4rem;
             position: absolute;
             top: 40%;
-            left: 37.5%;
+            // left: 37.5%;
+
+            @include mobile {
+                font-size: 3rem;
+                // left: 27.5%;
+            }
         }
     }
 
@@ -457,38 +549,75 @@
             font-weight: 300;
             padding: 0 5rem;
             text-align: justify;
+            margin-bottom: 2rem;
+
+            @include mobile {
+                padding: 0 1rem;
+                font-size: 1.6rem;
+            }
         }
 
         &-priority {
             padding: 0 8rem;
 
+            @include mobile {
+                padding: 0 2rem;
+            }
+
             &--high {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+
+                @include mobile {
+                    img {
+                        width: 10rem;
+                    }
+                }
             }
 
             &--medium {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+
+                @include mobile {
+                    img {
+                        width: 10rem;
+                    }
+                }
             }
 
             &--low {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+
+                @include mobile {
+                    img {
+                        width: 10rem;
+                    }
+                }
             }
 
             &--title {
                 font-size: 2rem;
                 font-weight: 300;
                 width: 19rem;
+
+                @include mobile {
+                    width: 10rem;
+                    font-size: 1.6rem;
+                }
             }
         }
 
         &-notes {
             padding: 0 6rem;
+
+            @include mobile {
+                padding: 0 3rem;
+            }
 
             &--title {
                 font-size: 2rem;
@@ -496,8 +625,9 @@
             }
 
             li {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 font-weight: 300;
+                margin-bottom: 1rem;
             }
         }
     }

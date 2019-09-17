@@ -35,7 +35,7 @@ class Reroll extends Component {
 
 	render() {
 		const { heroes, selectedHero5, selectedHero4, selectedHero3 } = this.state;
-		const { disclaimer, suggestion, notes1, notes2, notes3, notes4 } = rerolldata;
+		const { disclaimer, suggestion1, suggestion2, suggestion3, suggestion4, notes1, notes2, notes3, notes4 } = rerolldata;
 		
 		return (
 			<div className="reroll">
@@ -178,7 +178,10 @@ class Reroll extends Component {
 						<div className="margin-bottom-small">
 							<h2 className="reroll__suggestion-title">Suggestions</h2>
 						</div>
-						<p className="reroll__suggestion-content">{suggestion}</p>
+						<p className="reroll__suggestion-content">{suggestion1}</p>
+						<p className="reroll__suggestion-content">{suggestion2}</p>
+						<p className="reroll__suggestion-content">{suggestion3}</p>
+						<p className="reroll__suggestion-content">{suggestion4}</p>
 					</div>
 					<div className="reroll__suggestion-priority">
 						<div className="reroll__suggestion-priority--high">
