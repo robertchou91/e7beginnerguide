@@ -3,7 +3,13 @@
 @import "backdrop.scss";
 @import "breakpoints.scss";
 @import "color.scss";
-@import "reroll.scss";
+
+@import "Reroll/reroll.scss";
+@import "Reroll/rerolltoc.scss";
+@import "Reroll/reroll5star.scss";
+@import "Reroll/reroll4star.scss";
+@import "Reroll/reroll3star.scss";
+@import "Reroll/rerollsuggestion.scss";
 
 
 *,

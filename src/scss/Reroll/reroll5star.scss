@@ -1,0 +1,150 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//5 star
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.reroll {
+    &__fivestar {
+        &--title {
+            font-size: 3.5rem;
+        }
+    
+        &--container {
+            display: flex;
+            flex-wrap: wrap;
+            //think this over
+            padding: 0 15%;
+            margin-bottom: 3rem;
+            justify-content: center;
+    
+            @include mobile {
+                padding: 0 1rem;
+                margin-bottom: 1rem;
+            }
+    
+            @include smalldesktop {
+            //think this over
+            padding: 0 10%;
+            }
+        }     
+    
+        &--list {
+            padding: 2rem;
+            flex: 0 33%;
+            // flex-wrap: wrap;
+    
+            @include mobile {
+                padding: 1rem;
+                flex: 0 50%;
+            }
+    
+        }   
+    
+        &--hero {
+            // height: 100%;
+            // width: 100%;
+            background-color: $black-background;
+            transform: (skewX(-10deg));
+            border-radius: 1.5rem;
+            border: 1px solid white;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+    
+            .hero5name {
+                position: absolute;
+                top: 30%;
+                left: 10%;
+                font-size: 2rem;
+                font-weight: 700;
+    
+                @include mobile {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
+            }
+            .hero5img {
+                float: right;
+                transform:(skewX(10deg));
+                opacity: 0.8;
+    
+                @include mobile {
+                    width: 10rem;
+                }
+                
+            }
+    
+            &:hover > .hero5img {
+                opacity: 1;
+            }
+        }       
+    }
+    
+    &__selected5 {
+        display: inline-block;
+        padding: 3rem;
+        height: 45rem;
+        width: 100rem;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 1rem;
+    
+        &--image {
+            display: inline-block;
+            width: 50%;
+    
+            img {
+                height: 38rem;
+                margin-right: 5rem;
+            }
+        }
+    
+        &--reasons {
+            width: 45%;
+            display: inline-block;
+            vertical-align: top;
+        }
+    
+        &--name {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+    
+        li {
+            color: white;
+            font-size: 2rem;
+            font-weight: 200;
+            text-align: justify;
+            margin-bottom: 1rem;
+    
+        }
+    }
+    
+    &__selectedfive {
+        // think this over
+        height: 45rem;
+        width: 100rem;
+        position: relative;
+        display: inline-block;
+        background-image: linear-gradient(
+        to right bottom,
+        rgba($gray-border-color, 0.7),
+        rgba($black-background, 0.7)),
+        url(../images/selectboxbg.jpg);
+        background-size: cover;
+        border: 1px solid white;
+        border-radius: 1rem;
+    
+        @include mobile {
+            width: 100%;
+            background-position: center;
+        }
+    
+        &--content {
+            width: 100%;
+            font-size: 4rem;
+            position: absolute;
+            top: 45%;
+        }
+    }
+}

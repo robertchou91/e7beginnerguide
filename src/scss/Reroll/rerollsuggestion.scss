@@ -1,0 +1,99 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//suggestion
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.reroll {
+    &__suggestion {
+
+        &-title {
+            font-size: 3.5rem;
+        }
+    
+        &-content {
+            font-size: 2rem;
+            font-weight: 300;
+            padding: 0 5rem;
+            text-align: justify;
+            margin-bottom: 2rem;
+    
+            @include mobile {
+                padding: 0 1rem;
+                font-size: 1.6rem;
+            }
+        }
+    
+        &-priority {
+            padding: 0 8rem;
+    
+            @include mobile {
+                padding: 0 2rem;
+            }
+    
+            &--high {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+    
+                @include mobile {
+                    img {
+                        width: 10rem;
+                    }
+                }
+            }
+    
+            &--medium {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+    
+                @include mobile {
+                    img {
+                        width: 10rem;
+                    }
+                }
+            }
+    
+            &--low {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+    
+                @include mobile {
+                    img {
+                        width: 10rem;
+                    }
+                }
+            }
+    
+            &--title {
+                font-size: 2rem;
+                font-weight: 300;
+                width: 19rem;
+    
+                @include mobile {
+                    width: 10rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    
+        &-notes {
+            padding: 0 6rem;
+    
+            @include mobile {
+                padding: 0 3rem;
+            }
+    
+            &--title {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+    
+            li {
+                font-size: 1.6rem;
+                font-weight: 300;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
