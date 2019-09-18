@@ -29,17 +29,21 @@ html {
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     line-height: 1.4;
     background-color: $black-background;
     color: $font-color;
     //height 100vh?
     // height: 100%;
-    padding: 0 15rem 0 15rem;
+    padding: 0 15rem;
 
     @include mobile {
-        padding: 0 1rem 0 1rem;
+        padding: 0 1rem;
+    }
+
+    @include tablet {
+        padding: 0 3rem;
     }
 }
 
@@ -83,3 +87,4 @@ a.active {
     // think on htis
     border-color: $gray-border-color;
 }
+

@@ -42,7 +42,7 @@ class Reroll extends Component {
 				<div className="u-center-text">
 					<h1 className="reroll__title margin-bottom-small">Reroll Guide</h1>
 				</div>
-				<div className="reroll__toc margin-bottom-small">
+				<div className="reroll__toc margin-bottom-medium">
 					<p className="reroll__toc-title">Table of Contents</p>
 					<ul className="reroll__toc-list">
 						<li><a href="#fivestar">1. Five Star Heroes</a></li>

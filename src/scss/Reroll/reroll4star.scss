@@ -21,6 +21,10 @@
                 padding: 0 1rem;
                 margin-bottom: 1rem;
             }
+
+            @include tablet {
+                padding: 0;
+            }
     
             @include smalldesktop {
             //think this over
@@ -36,6 +40,11 @@
             @include mobile {
                 padding: 1rem;
                 flex: 0 50%;
+            }
+
+            @include tablet {
+                padding: 1.5rem;
+                flex: 0 45%;
             }
         }  
         
@@ -88,27 +97,59 @@
         background-color: black;
         border: 1px solid white;
         border-radius: 1rem;
-    
+        
+        @include mobile {
+            width: 100%;
+            height: 60rem;
+            line-height: 1.3;
+            border-radius: 0;
+        }
+
+        @include tablet {
+            width: 100%;
+            line-height: 1.3;
+        }
+
         &--image {
             display: inline-block;
             width: 50%;
-    
-            img {
-                // width: 50%;
-                height: 38rem;
-                margin-right: 5rem;
+
+            @include mobile {
+                width: 100%;
+                margin-bottom: 2rem;
             }
-    
-            img:nth-child(-n+3) {
-                height: 35rem;
+
+            @include tablet {
+                width: 50%;
+                margin-top: 5rem;
+                margin-right: 3rem;
             }
             
+            img {
+                height: 35rem;
+                margin-right: 5rem;
+
+                @include mobile {
+                    height: 19rem;
+                    margin: 0;
+                }
+
+                @include tablet {
+                    height: 25rem;
+                    margin: 0;
+                    
+                }
+            }
         }
     
         &--reasons {
             width: 45%;
             display: inline-block;
             vertical-align: top;
+
+            @include mobile {
+                width: 100%;
+            }
         }
     
         &--name {
@@ -119,9 +160,17 @@
         li {
             color: white;
             font-size: 2rem;
-            font-weight: 200;
-            text-align: justify;
+            font-weight: 300;
+            text-align: left;
             margin-bottom: 1rem;
+
+            @include mobile {
+                font-size: 1.6rem;
+            }
+
+            @include tablet {
+                font-size: 1.6rem;
+            }
         }
     }
     
@@ -141,8 +190,15 @@
         border-radius: 1rem;
     
         @include mobile {
+            height: 60rem;
             width: 100%;
             background-position: center;
+            border-radius: 0;
+        }
+
+        @include tablet {
+            width: 100%;
+            line-height: 1.3;
         }
     
         &--content {

@@ -13,12 +13,16 @@
             font-size: 2rem;
             font-weight: 300;
             padding: 0 5rem;
-            text-align: justify;
+            text-align: left;
             margin-bottom: 2rem;
     
             @include mobile {
                 padding: 0 1rem;
                 font-size: 1.6rem;
+            }
+
+            @include tablet {
+                padding: 0 2rem;
             }
         }
     
@@ -27,6 +31,10 @@
     
             @include mobile {
                 padding: 0 2rem;
+            }
+
+            @include tablet {
+                padding: 0 4rem;
             }
     
             &--high {
@@ -82,6 +90,10 @@
     
             @include mobile {
                 padding: 0 3rem;
+            }
+
+            @include tablet {
+                padding: 0 4rem;
             }
     
             &--title {
