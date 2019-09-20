@@ -44,7 +44,11 @@
 
             @include tablet {
                 padding: 1.5rem;
-                flex: 1 45%;
+                flex: 0 50%;
+            }
+
+            @include smalldesktop {
+                flex: 0 40%;
             }
         }  
         

@@ -27,8 +27,8 @@
             }
     
             @include smalldesktop {
-            //think this over
-            padding: 0 10%;
+                //think this over
+                padding: 0;
             }
         }
     
@@ -45,6 +45,10 @@
             @include tablet {
                 padding: 1.5rem;
                 flex: 0 45%;
+            }
+
+            @include smalldesktop {
+                flex: 0 30%;
             }
         }  
         

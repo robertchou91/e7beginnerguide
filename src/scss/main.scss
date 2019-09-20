@@ -45,6 +45,10 @@ body {
     @include tablet {
         padding: 0 3rem;
     }
+
+    @include smalldesktop {
+        padding: 0 5rem;
+    }
 }
 
 
