@@ -6,7 +6,7 @@
     background-color: $component-black-background;
     //think on this
     border: 1px solid $gray-border-color;
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding: 4rem;
 
     @include mobile {

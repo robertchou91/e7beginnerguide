@@ -3,20 +3,52 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .home {
+    &__title {
+        font-size: 5rem;
+    }
+
     &__intro {
         background-color: $component-black-background;
         //think on this
         border: 1px solid $gray-border-color;
-        border-radius: 1rem;
-        padding: 4rem;
+        border-radius: .5rem;
+        padding: 1rem;
         margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &-description {
+            font-weight: 200;
+            font-size: 2rem;
+            text-align: left;
+            flex-basis: 85%;
+        }
+
+        &-image {
+            padding: 1rem;
+            width: 11rem;
+        }
     }
 
     &__guides {
         background-color: $component-black-background;
         //think on this
         border: 1px solid $gray-border-color;
-        border-radius: 1rem;
-        padding: 4rem;
+        border-radius: .5rem;
+        padding: 3rem;
+        width: 100%;
+    }
+
+    &__guide {
+        display: flex;
+
+        &-image {
+            padding: 1rem;
+        }
+
+        &-description {
+            padding: 1rem;
+        }
     }
 }
