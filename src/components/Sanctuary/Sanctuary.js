@@ -15,7 +15,7 @@ class Orbis extends Component {
 					<p className="sanctuary__toc-title">Table of Contents</p>
 					<ul className="sanctuary__toc-list">
 						<li><a href="#overview">1. Quick Overview</a></li>
-						<li><a href="#test">2. Four Star Heroes</a></li>
+						<li><a href="#priorities">2. Priorities</a></li>
 						<li><a href="#">3 Three Star Heroes</a></li>
 						<li><a href="#">4. Suggestions</a></li>
 					</ul>
@@ -29,10 +29,10 @@ class Orbis extends Component {
 					<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
 					<div className="sanctuary__overview--content">{overview2}</div>
 				</div>
-				<hr id="test" className="linebreak"></hr>
+				<hr id="priorities" className="linebreak"></hr>
 				<div className="u-center-text margin-bottom-medium">
 					<div className="margin-bottom-small">
-						<h2 className="sanctuary__overview">Quick Overview</h2>
+						<h2 className="sanctuary__overview">Priorities</h2>
 					</div>
 					<div className="sanctuary__overview--content margin-bottom-small">{overview}</div>
 					<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
