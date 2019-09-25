@@ -6,7 +6,7 @@ import SideDrawer from './components/SideDrawer/SideDrawer';
 import BackDrop from './components/BackDrop/BackDrop';
 import Home from './components/Home/Home';
 import Reroll from './components/Reroll/Reroll';
-import Orbis from './components/Orbis/Orbis';
+import Sanctuary from './components/Sanctuary/Sanctuary';
 
 import './scss/main.scss';
 
@@ -44,7 +44,7 @@ class App extends Component {
                     <main>
                         <Route path='/' exact component={Home} />
                         <Route path='/reroll' component={Reroll} />
-                        <Route path='/orbis' component={Orbis} />
+                        <Route path='/sanctuary' component={Sanctuary} />
                     </main>
                 </div>
             </Router>

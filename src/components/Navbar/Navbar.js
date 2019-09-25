@@ -17,7 +17,7 @@ const Navbar = props => (
 			<ul className="navbar__list">
 				<li className="navbar__list-item"><NavLink to='/' activeClassName={"active"} exact>Home</NavLink></li>
 				<li className="navbar__list-item"><NavLink to='/reroll' activeClassName={"active"}>Reroll</NavLink></li>
-				<li className="navbar__list-item"><NavLink to='/orbis' activeClassName={"active"}>Breath of Orbis</NavLink></li>
+				<li className="navbar__list-item"><NavLink to='/sanctuary' activeClassName={"active"}>Sanctuary</NavLink></li>
 			</ul>
 		</nav>
 	</header>

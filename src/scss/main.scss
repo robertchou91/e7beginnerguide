@@ -14,8 +14,8 @@
 @import "Reroll/rerollsuggestion.scss";
 
 
-@import "Orbis/orbis.scss";
-@import "Orbis/orbistoc.scss";
+@import "Sanctuary/sanctuary.scss";
+@import "Sanctuary/sanctuarytoc.scss";
 
 
 *,
@@ -87,7 +87,7 @@ a.active {
 }
 
 .linebreak {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     // think on htis
     border-color: $gray-border-color;
 }

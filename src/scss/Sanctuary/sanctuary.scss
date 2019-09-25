@@ -1,22 +1,31 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-//orbis page
+//santuary page
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.orbis {
+.sanctuary {
     background-color: $component-black-background;
     //think on this
     border: 1px solid $gray-border-color;
     border-radius: .5rem;
     padding: 4rem;
 
+    @include mobile {
+        padding: 0;
+    }
+
+    @include tablet {
+        padding: 2rem;
+    }
+
     &__title {
         font-size: 5rem;
         font-weight: 400;
     }
 
-    &__breathoforbis {
+    &__overview {
         font-size: 3.5rem;
         font-weight: 400;
+        margin-top: 6rem;
 
         &--content {
             font-size: 2rem;
@@ -33,5 +42,9 @@
                 padding: 0 2rem;
             }
         }
+    }
+
+    #test {
+        margin-bottom: 6rem;
     }
 }

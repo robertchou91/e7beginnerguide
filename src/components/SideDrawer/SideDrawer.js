@@ -12,7 +12,7 @@ const sideDrawer = props => {
             <ul className="sidedrawer__list">
                 <li className="sidedrawer__list-item"><Link to='/'>Home</Link></li>
                 <li className="sidedrawer__list-item"><Link to='/reroll'>Reroll</Link></li>
-                <li className="sidedrawer__list-item"><Link to='/equipment'>Equipment</Link></li>
+                <li className="sidedrawer__list-item"><Link to='/sanctuary'>Sanctuary</Link></li>
             </ul>
         </nav>
     )
