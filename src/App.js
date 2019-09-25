@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
-import Reroll from './components/Reroll/Reroll';
-import Orbis from './components/Orbis';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import BackDrop from './components/BackDrop/BackDrop';
+import Home from './components/Home/Home';
+import Reroll from './components/Reroll/Reroll';
+import Orbis from './components/Orbis/Orbis';
+
 import './scss/main.scss';
-
-
 
 class App extends Component {
     state = {

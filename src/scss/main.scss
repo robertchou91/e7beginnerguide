@@ -4,6 +4,8 @@
 @import "breakpoints.scss";
 @import "color.scss";
 
+@import "home.scss";
+
 @import "Reroll/reroll.scss";
 @import "Reroll/rerolltoc.scss";
 @import "Reroll/reroll5star.scss";
@@ -11,8 +13,9 @@
 @import "Reroll/reroll3star.scss";
 @import "Reroll/rerollsuggestion.scss";
 
-@import "home.scss";
-@import "orbis.scss";
+
+@import "Orbis/orbis.scss";
+@import "Orbis/orbistoc.scss";
 
 
 *,
