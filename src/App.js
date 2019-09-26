@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
+import ScrollToTop from './components/Navbar/ScrollToTop';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import BackDrop from './components/BackDrop/BackDrop';
 import Home from './components/Home/Home';
@@ -34,19 +35,21 @@ class App extends Component {
 
         return (
             <Router>
-                <div className="App">
-                    <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
-                    <SideDrawer 
-                        show={this.state.sideDrawerOpen}
-                        close={this.sideDrawerClosedHandler}
-                    />
-                    {backDrop}
-                    <main>
-                        <Route path='/' exact component={Home} />
-                        <Route path='/reroll' component={Reroll} />
-                        <Route path='/sanctuary' component={Sanctuary} />
-                    </main>
-                </div>
+                <ScrollToTop>
+                    <div className="App">
+                        <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
+                        <SideDrawer 
+                            show={this.state.sideDrawerOpen}
+                            close={this.sideDrawerClosedHandler}
+                        />
+                        {backDrop}
+                        <main>
+                            <Route path='/' exact component={Home} />
+                            <Route path='/reroll' component={Reroll} />
+                            <Route path='/sanctuary' component={Sanctuary} />
+                        </main>
+                    </div>
+                </ScrollToTop>
             </Router>
 
         );

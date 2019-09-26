@@ -1,5 +1,5 @@
 export const sanctuarydata = {
 	overview: "Sanctuary is an important aspect of your progression. The workshops allow you to generate all sorts of important resources (Penguins, Phantasma, Molagora, Skystones, Ancient Coins, and ???) and craft Equipments and Catalysts necessary for you to speed up progression. Which is why it is important to quickly obtain all the Breath of Orbis that are scattered all over the Adventure maps. There will be one Breath of Orbis in each map with an icon hovering over the stage to indicate that a Breath of Orbis can be obtain.",
 	overview2: "Because it is impossible to fully upgrade every single workshop, players have to prioritize on what they want to upgrade unless they are willing to spend a large sum of gold resetting upgrades (not really ideal for a new player to spend that much gold).",
-	priority: ""
+	priority: "One of the important aspect of the game is just to be yourself so you can be the very best. if player A kills player B player A will be the winner else if "
 }
