@@ -4,7 +4,7 @@ import { sanctuarydata } from './SanctuaryData';
 class Orbis extends Component {
     render() {
 
-		const { overview, overview2, priority, forestofsoul, highcommand, lowpriority } = sanctuarydata;
+		const { overview, overview2, priority, forestofsoul, highcommand, lowpriority, steelworkshop, steeple, note } = sanctuarydata;
 
         return (
             <div className="sanctuary">
@@ -17,7 +17,7 @@ class Orbis extends Component {
 						<li><a href="#overview">1. Quick Overview</a></li>
 						<li><a href="#priorities">2. High Priorities</a></li>
 						<li><a href="#lowpriorities">3 Low Priorities</a></li>
-						<li><a href="#">4. Suggestions</a></li>
+						<li><a href="#note">4. Side Note</a></li>
 					</ul>
 				</div>
 				<div id="overview"></div>
@@ -46,8 +46,17 @@ class Orbis extends Component {
 						<h2 className="sanctuary__overview">Low Priorities</h2>
 					</div>
 					<div className="sanctuary__overview--content margin-bottom-small">{lowpriority}</div>
-					<div className="sanctuary__overview--content margin-bottom-small">{forestofsoul}</div>
-					<div className="sanctuary__overview--content margin-bottom-small">{highcommand}</div>
+					<div className="sanctuary__overview--content margin-bottom-small">{steelworkshop}</div>
+					<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+					<div className="sanctuary__overview--content margin-bottom-small">{steeple}</div>
+					<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+				</div>
+				<hr id="note" className="linebreak"></hr>
+				<div className="u-center-text margin-bottom-medium">
+					<div className="margin-bottom-small">
+						<h2 className="sanctuary__overview">Side Note</h2>
+					</div>
+					<div className="sanctuary__overview--content margin-bottom-small">{note}</div>
 				</div>
             </div>
         );
