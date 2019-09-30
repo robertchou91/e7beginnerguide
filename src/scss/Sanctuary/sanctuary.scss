@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-//santuary page
+//sanctuary page
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .sanctuary {
@@ -18,19 +18,26 @@
     }
 
     &__title {
-        font-size: 5rem;
+        font-size: 6rem;
         font-weight: 400;
     }
 
     &__overview {
-        font-size: 3.5rem;
+        font-size: 4rem;
         font-weight: 400;
         margin-top: 6rem;
+        padding: 0 5rem;
+
+        &--sub {
+            font-size: 3rem;
+            font-weight: 400;
+            text-align: left;
+            // text-decoration: underline;
+        }
 
         &--content {
             font-size: 2rem;
             font-weight: 300;
-            padding: 0 5rem;
             text-align: left;
 
             @include mobile {

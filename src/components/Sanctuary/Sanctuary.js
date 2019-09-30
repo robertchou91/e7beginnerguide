@@ -4,7 +4,7 @@ import { sanctuarydata } from './SanctuaryData';
 class Orbis extends Component {
     render() {
 
-		const { overview, overview2, priority, forestofsoul, highcommand, lowpriority, steelworkshop, steeple, note } = sanctuarydata;
+		const { overview, overview2, priority, forestofsoul, highcommand, lowpriority, steelworkshop, steeple, heartoforbis, note1, note2 } = sanctuarydata;
 
         return (
             <div className="sanctuary">
@@ -32,31 +32,53 @@ class Orbis extends Component {
 				<hr id="priorities" className="linebreak"></hr>
 				<div className="u-center-text margin-bottom-medium">
 					<div className="margin-bottom-small">
-						<h2 className="sanctuary__overview">High Priorities</h2>
+						<div className="sanctuary__overview">High Priorities</div>
 					</div>
-					<div className="sanctuary__overview--content margin-bottom-small">{priority}</div>
-					<div className="sanctuary__overview--content margin-bottom-small">{forestofsoul}</div>
-					<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
-					<div className="sanctuary__overview--content margin-bottom-small">{highcommand}</div>
-					<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+					<div className="sanctuary__overview--content margin-bottom-medium">{priority}</div>
+					<div className="margin-bottom-medium">
+						<div className="sanctuary__overview--sub margin-bottom-small">Forest of Soul</div>
+						<div className="sanctuary__overview--content margin-bottom-small">{forestofsoul}</div>
+						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+					</div>
+					<div className="margin-bottom-small">
+						<div className="sanctuary__overview--sub margin-bottom-small">High Command</div>
+						<div className="sanctuary__overview--content margin-bottom-small">{highcommand}</div>
+						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+					</div>
 				</div>
 				<hr id="lowpriorities" className="linebreak"></hr>
 				<div className="u-center-text margin-bottom-medium">
 					<div className="margin-bottom-small">
 						<h2 className="sanctuary__overview">Low Priorities</h2>
 					</div>
-					<div className="sanctuary__overview--content margin-bottom-small">{lowpriority}</div>
-					<div className="sanctuary__overview--content margin-bottom-small">{steelworkshop}</div>
-					<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
-					<div className="sanctuary__overview--content margin-bottom-small">{steeple}</div>
-					<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+					<div className="sanctuary__overview--content margin-bottom-medium">{lowpriority}</div>
+					<div className="margin-bottom-medium">
+						<div className="sanctuary__overview--sub margin-bottom-small">SteelWorkshop</div>
+						<div className="sanctuary__overview--content margin-bottom-small">{steelworkshop}</div>
+						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+					</div>
+					<div className="margin-bottom-medium">
+						<div className="sanctuary__overview--sub margin-bottom-small">Alchemist's Steeple</div>
+						<div className="sanctuary__overview--content margin-bottom-small">{steeple}</div>
+						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+					</div>
+					<div className="margin-bottom-medium">
+						<div className="sanctuary__overview--sub margin-bottom-small">Heart of Orbis</div>
+						<div className="sanctuary__overview--content margin-bottom-small">{heartoforbis}</div>
+						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+					</div>
 				</div>
 				<hr id="note" className="linebreak"></hr>
 				<div className="u-center-text margin-bottom-medium">
 					<div className="margin-bottom-small">
 						<h2 className="sanctuary__overview">Side Note</h2>
 					</div>
-					<div className="sanctuary__overview--content margin-bottom-small">{note}</div>
+					<div className="sanctuary__overview--content margin-bottom-small">
+						<ul>
+							<li>{note1}</li>
+							<li>{note2}</li>
+						</ul>
+					</div>
 				</div>
             </div>
         );
