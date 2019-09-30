@@ -4,7 +4,7 @@ import { sanctuarydata } from './SanctuaryData';
 class Orbis extends Component {
     render() {
 
-		const { overview, overview2, priority, forestofsoul, highcommand, lowpriority, steelworkshop, steeple, heartoforbis, note1, note2 } = sanctuarydata;
+		const { overview, overview2, priority, forestofsoul, highcommand, lowpriority, steelworkshop, steeple, heartoforbis, note1, note12, note13, note14, note15, note16, note2 } = sanctuarydata;
 
         return (
             <div className="sanctuary">
@@ -53,6 +53,11 @@ class Orbis extends Component {
 					</div>
 					<div className="sanctuary__overview--content margin-bottom-medium">{lowpriority}</div>
 					<div className="margin-bottom-medium">
+						<div className="sanctuary__overview--sub margin-bottom-small">Heart of Orbis</div>
+						<div className="sanctuary__overview--content margin-bottom-small">{heartoforbis}</div>
+						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
+					</div>
+					<div className="margin-bottom-medium">
 						<div className="sanctuary__overview--sub margin-bottom-small">SteelWorkshop</div>
 						<div className="sanctuary__overview--content margin-bottom-small">{steelworkshop}</div>
 						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
@@ -62,11 +67,6 @@ class Orbis extends Component {
 						<div className="sanctuary__overview--content margin-bottom-small">{steeple}</div>
 						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
 					</div>
-					<div className="margin-bottom-medium">
-						<div className="sanctuary__overview--sub margin-bottom-small">Heart of Orbis</div>
-						<div className="sanctuary__overview--content margin-bottom-small">{heartoforbis}</div>
-						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
-					</div>
 				</div>
 				<hr id="note" className="linebreak"></hr>
 				<div className="u-center-text margin-bottom-medium">
@@ -74,10 +74,15 @@ class Orbis extends Component {
 						<h2 className="sanctuary__overview">Side Note</h2>
 					</div>
 					<div className="sanctuary__overview--content margin-bottom-small">
+						<div>{note1}</div>
 						<ul>
-							<li>{note1}</li>
-							<li>{note2}</li>
+							<li>{note12}</li>
+							<li>{note13}</li>
+							<li>{note14}</li>
+							<li>{note15}</li>
+							<li>{note16}</li>
 						</ul>
+						<div>{note2}</div>
 					</div>
 				</div>
             </div>
