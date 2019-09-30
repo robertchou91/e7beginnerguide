@@ -1,38 +1,38 @@
-import iseriasmall from '../../images/iseriasmall.png';
-import kensmall from '../../images/kensmall.png';
-import ravismall from '../../images/ravismall.png';
-import sezsmall from '../../images/sezsmall.png';
-import tywinsmall from '../../images/tywinsmall.png';
-import vildredsmall from '../../images/vildredsmall.png';
+import iseriasmall from '../../images/Heroes/iseriasmall.png';
+import kensmall from '../../images/Heroes/kensmall.png';
+import ravismall from '../../images/Heroes/ravismall.png';
+import sezsmall from '../../images/Heroes/sezsmall.png';
+import tywinsmall from '../../images/Heroes/tywinsmall.png';
+import vildredsmall from '../../images/Heroes/vildredsmall.png';
 
-import angelicasmall from '../../images/angelicasmall.png';
-import arminsmall from '../../images/arminsmall.png';
-import ciddsmall from '../../images/ciddsmall.png';
-import clarissasmall from '../../images/clarissasmall.png';
-import corvussmall from '../../images/corvussmall.png';
-import karinsmall from '../../images/karinsmall.png';
-import schurismall from '../../images/schurismall.png';
+import angelicasmall from '../../images/Heroes/angelicasmall.png';
+import arminsmall from '../../images/Heroes/arminsmall.png';
+import ciddsmall from '../../images/Heroes/ciddsmall.png';
+import clarissasmall from '../../images/Heroes/clarissasmall.png';
+import corvussmall from '../../images/Heroes/corvussmall.png';
+import karinsmall from '../../images/Heroes/karinsmall.png';
+import schurismall from '../../images/Heroes/schurismall.png';
 
-import montmorancysmall from '../../images/montmorancysmall.png';
-import klurismall from '../../images/klurismall.png';
+import montmorancysmall from '../../images/Heroes/montmorancysmall.png';
+import klurismall from '../../images/Heroes/klurismall.png';
 
-import iseriafull from '../../images/iseriafull.png';
-import kenfull from '../../images/kenfull.png';
-import ravifull from '../../images/ravifull.png';
-import sezfull from '../../images/sezfull.png';
-import tywinfull from '../../images/tywinfull.png';
-import vildredfull from '../../images/vildredfull.png';
+import iseriafull from '../../images/Heroes/iseriafull.png';
+import kenfull from '../../images/Heroes/kenfull.png';
+import ravifull from '../../images/Heroes/ravifull.png';
+import sezfull from '../../images/Heroes/sezfull.png';
+import tywinfull from '../../images/Heroes/tywinfull.png';
+import vildredfull from '../../images/Heroes/vildredfull.png';
 
-import angelicafull from '../../images/angelicafull.png';
-import arminfull from '../../images/arminfull.png';
-import ciddfull from '../../images/ciddfull.png';
-import clarissafull from '../../images/clarissafull.png';
-import corvusfull from '../../images/corvusfull.png';
-import karinfull from '../../images/karinfull.png';
-import schurifull from '../../images/schurifull.png';
+import angelicafull from '../../images/Heroes/angelicafull.png';
+import arminfull from '../../images/Heroes/arminfull.png';
+import ciddfull from '../../images/Heroes/ciddfull.png';
+import clarissafull from '../../images/Heroes/clarissafull.png';
+import corvusfull from '../../images/Heroes/corvusfull.png';
+import karinfull from '../../images/Heroes/karinfull.png';
+import schurifull from '../../images/Heroes/schurifull.png';
 
-import montmorancyfull from '../../images/montmorancyfull.png';
-import klurifull from '../../images/klurifull.png';
+import montmorancyfull from '../../images/Heroes/montmorancyfull.png';
+import klurifull from '../../images/Heroes/klurifull.png';
 
 export const rerolldata = {
 	disclaimer: "This Reroll Guide is not about explaining how to reroll or what is the fastest approach to rerolling in this game. This guide is about me giving you some suggestions on which units to start the game out with based on my own experience. It is not to pidgeonhole you into specific units. You are free to start with any Hero you want.",

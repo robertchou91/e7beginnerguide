@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { sanctuarydata } from './SanctuaryData';
 
-class Orbis extends Component {
+class Sanctuary extends Component {
     render() {
 
 		const { overview, overview2, priority, forestofsoul, highcommand, lowpriority, steelworkshop, steeple, heartoforbis, note1, note12, note13, note14, note15, note16, note2 } = sanctuarydata;
@@ -36,7 +36,7 @@ class Orbis extends Component {
 					</div>
 					<div className="sanctuary__overview--content margin-bottom-medium">{priority}</div>
 					<div className="margin-bottom-medium">
-						<div className="sanctuary__overview--sub margin-bottom-small">Forest of Soul</div>
+						<div className="sanctuary__overview--sub margin-bottom-small">Forest of Souls</div>
 						<div className="sanctuary__overview--content margin-bottom-small">{forestofsoul}</div>
 						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
 					</div>
@@ -58,7 +58,7 @@ class Orbis extends Component {
 						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
 					</div>
 					<div className="margin-bottom-medium">
-						<div className="sanctuary__overview--sub margin-bottom-small">SteelWorkshop</div>
+						<div className="sanctuary__overview--sub margin-bottom-small">Steel Workshop</div>
 						<div className="sanctuary__overview--content margin-bottom-small">{steelworkshop}</div>
 						<img className="sanctuary__overiew--image margin-bottom-small" alt="breath of orbis" />
 					</div>
@@ -90,4 +90,4 @@ class Orbis extends Component {
     }
 }
 
-export default Orbis;
+export default Sanctuary;

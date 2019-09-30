@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { herodata, rerolldata } from './RerollData';
 
-import iseriasmall from '../../images/iseriasmall.png';
-import kensmall from '../../images/kensmall.png';
-import ravismall from '../../images/ravismall.png';
-import sezsmall from '../../images/sezsmall.png';
-import tywinsmall from '../../images/tywinsmall.png';
-import vildredsmall from '../../images/vildredsmall.png';
+import iseriasmall from '../../images/Heroes/iseriasmall.png';
+import kensmall from '../../images/Heroes/kensmall.png';
+import ravismall from '../../images/Heroes/ravismall.png';
+import sezsmall from '../../images/Heroes/sezsmall.png';
+import tywinsmall from '../../images/Heroes/tywinsmall.png';
+import vildredsmall from '../../images/Heroes/vildredsmall.png';
 
 class Reroll extends Component {
 
