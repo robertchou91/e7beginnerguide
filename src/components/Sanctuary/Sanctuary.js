@@ -71,18 +71,18 @@ class Sanctuary extends Component {
 				<hr id="note" className="linebreak"></hr>
 				<div className="u-center-text margin-bottom-medium">
 					<div className="margin-bottom-small">
-						<h2 className="sanctuary__overview">Side Note</h2>
+						<h2 className="sanctuary__note">Side Note</h2>
 					</div>
-					<div className="sanctuary__overview--content margin-bottom-small">
-						<div>{note1}</div>
-						<ul>
+					<div className="sanctuary__note--content margin-bottom-small">
+						<p className="margin-bottom-small">{note1}</p>
+						<ul className="margin-bottom-small">
 							<li>{note12}</li>
 							<li>{note13}</li>
 							<li>{note14}</li>
 							<li>{note15}</li>
 							<li>{note16}</li>
 						</ul>
-						<div>{note2}</div>
+						<p>{note2}</p>
 					</div>
 				</div>
             </div>

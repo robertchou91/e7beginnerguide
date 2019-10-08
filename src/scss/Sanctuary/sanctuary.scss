@@ -20,6 +20,10 @@
     &__title {
         font-size: 6rem;
         font-weight: 400;
+
+        @include mobile {
+            font-size: 5rem;
+        }
     }
 
     &__overview {
@@ -33,6 +37,15 @@
             text-align: left;
             padding: 0 5rem;
             // text-decoration: underline;
+
+            @include mobile {
+                font-size: 2.5rem;
+                padding: 0 1rem;
+            }
+
+            @include tablet {
+                padding: 0 2rem;
+            }
         }
 
         &--content {
@@ -52,7 +65,40 @@
         }
     }
 
-    #test {
-        margin-bottom: 6rem;
+    &__note {
+        font-size: 4rem;
+        font-weight: 400;
+        margin-top: 6rem;
+
+        &--content {
+            font-size: 2rem;
+            font-weight: 300;
+            text-align: left;
+            padding: 0 5rem;
+
+            @include mobile {
+                padding: 0 1rem;
+                font-size: 1.6rem;
+            }
+
+            @include tablet {
+                padding: 0 2rem;
+            }
+
+            p {
+                font-size: 2rem;
+                font-weight: 300;
+
+                @include mobile {
+                    font-size: 1.6rem;
+                }
+            }
+
+            ul {
+                li {
+                    list-style: none;
+                }
+            }
+        }
     }
 }

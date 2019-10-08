@@ -17,7 +17,7 @@ class Home extends Component {
 
         return (
             <div className="home">
-                <div className="u-center-text margin-bottom-medium">
+                <div className="u-center-text margin-bottom-small">
                     <h1 className="home__title">E7 Beginner Guide</h1>
                 </div>
                 <div className="u-center-text">
@@ -26,8 +26,8 @@ class Home extends Component {
                         <img className="home__intro-image" src={raphixd} alt="raphixd" />
                     </div>
                 </div>
-                
-                <div className="home__guides">
+                <div className="home__guides u-center-text">
+                    <div className="home__guides-title">Guides</div>
                     {guidelist}
                 </div>
             </div>
